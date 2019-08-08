@@ -103,6 +103,24 @@ table, tr, td {
     font-weight: 600;
   }
 
+  table.button.expanded td {
+    text-align: center;
+  }
+
+  table.button.expanded td a.wonka-btn {
+    display: flex;
+    margin: auto;
+    padding: 8px;
+    width: 200px;
+    color: #ffffff;
+    background: #52abf6;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.6);
+  }
+
 @media only screen {
   html {
     min-height: 100%;
@@ -1003,14 +1021,12 @@ span.preheader {
   overflow: hidden; }
 
 table.button {
-  width: auto;
+  width: 100%;
   margin: 0 0 16px 0;
   Margin: 0 0 16px 0; }
   table.button table td {
-    text-align: left;
-    color: #fefefe;
-    background: #2199e8;
-    border: 2px solid #2199e8; }
+    text-align: center;
+    width: 100%;
     table.button table td a {
       font-family: Helvetica, Arial, sans-serif;
       font-size: 16px;
@@ -1468,30 +1484,32 @@ body.outlook p {
                                     <h1 class="text-center">signup10</h1>
                                   </div>
                                   <p class="text-center">{Email:1}, redeem this coupon code on any product and receive an instant 10% off at checkout!</p>
-                                  <table class="button expanded rounded text-center">
-                                    <tr>
-                                      <td>
-                                        <table class="text-center">
-                                          <tr>
-                                            <td class="text-center"><a href="https://aperabags.com">Shop Now</a></td>
-                                          </tr>
-                                        </table>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                  <center data-parsed="">
-                                    <table align="center" class="menu float-center">
-                                      <tr>
-                                        <td>
-                                        </td>
-                                      </tr>
-                                    </table>
-                                  </center>
                                 </th>
-                                <th class="expander"></th>
                               </tr>
                             </table>
                           </th>
+                        </tr>
+                        <tr>
+                          <th>
+                        <table class="button expanded rounded text-center">
+                          <tr>
+                            <td class="text-center"><a class="wonka-btn" href="https://aperabags.com">Shop Now</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <table class="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style="font-size:16px;line-height:16px;">&#xA0;</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <h5 class="text-center">Check us out on social media!</h5>
+                            </td>
+                          </tr>
+                        </table>
+                      </th>
                         </tr>
                       </tbody>
                         <table class="row collapse">
