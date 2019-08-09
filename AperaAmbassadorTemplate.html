@@ -52,7 +52,7 @@ img {
 
 center {
   width: 100%;
-  min-width: 580px; }
+  min-width: 650px; }
 
 a img {
   border: none; }
@@ -70,6 +70,7 @@ td {
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;
+  padding: 8px;
   border-collapse: collapse !important; }
 
 table, tr, td {
@@ -77,31 +78,31 @@ table, tr, td {
   vertical-align: top;
   text-align: left; }
 
-  tbody.top-header th {
-    width: 33.2%;
-    padding: 8px 15px;
-    color: #ffffff;
-    vertical-align: middle;
-  }
+tbody.top-header th {
+  width: 33.2%;
+  padding: 8px 15px;
+  color: #ffffff;
+  vertical-align: middle;
+}
 
-  tbody.top-header th.shop-link {
-    text-align: left;
-    font-weight: 600;
-  }
+tbody.top-header th.shop-link {
+  text-align: left;
+  font-weight: 600;
+}
 
-  tbody.top-header th.shop-link a {
-    color: #ffffff;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: .9rem;
-    font-weight: 600;
-  }
+tbody.top-header th.shop-link a {
+  color: #ffffff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: .9rem;
+  font-weight: 600;
+}
 
-  tbody.top-header th.free-shipping {
-    text-align: right;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: .9rem;
-    font-weight: 600;
-  }
+tbody.top-header th.free-shipping {
+  text-align: right;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: .9rem;
+  font-weight: 600;
+}
 
 @media only screen {
   html {
@@ -115,7 +116,7 @@ table.body {
 
 table.container {
   background: #fefefe;
-  width: 580px;
+  width: 650px;
   margin: 0 auto;
   Margin: 0 auto;
   text-align: inherit; }
@@ -138,7 +139,6 @@ td.column,
 th.columns,
 th.column {
   margin: 0 auto;
-  Margin: 0 auto;
   padding-left: 16px;
   padding-bottom: 16px; }
   td.columns .column,
@@ -179,14 +179,6 @@ th.large-1 {
   padding-left: 8px;
   padding-right: 8px; }
 
-td.large-1.first,
-th.large-1.first {
-  padding-left: 16px; }
-
-td.large-1.last,
-th.large-1.last {
-  padding-right: 16px; }
-
 .collapse > tbody > tr > td.large-1,
 .collapse > tbody > tr > th.large-1 {
   padding-right: 0;
@@ -208,12 +200,6 @@ th.large-1 center {
 .body .columns th.large-1,
 .body .column th.large-1 {
   width: 8.33333%; }
-
-td.large-2,
-th.large-2 {
-  width: 80.66667px;
-  padding-left: 8px;
-  padding-right: 8px; }
 
 td.large-2.first,
 th.large-2.first {
@@ -867,7 +853,7 @@ td,
 th,
 a {
   color: #0a0a0a;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: normal;
   padding: 0;
   margin: 0;
@@ -883,7 +869,7 @@ h5,
 h6 {
   color: inherit;
   word-wrap: normal;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: normal;
   margin-bottom: 10px;
   Margin-bottom: 10px; }
@@ -1012,7 +998,7 @@ table.button {
     background: #2199e8;
     border: 2px solid #2199e8; }
     table.button table td a {
-      font-family: Helvetica, Arial, sans-serif;
+      font-family: "Josefin Sans", sans-serif;
       font-size: 16px;
       font-weight: bold;
       color: #fefefe;
@@ -1424,14 +1410,14 @@ body.outlook p {
                 <tr>
                   <td>
                     <table class="row">
-                      <tbody class="top-header" style="background-image: url('https://aperabags.com/wp-content/uploads/2019/08/image_from_ios_email2.jpg');background-position: center center; background-size: cover; padding: 8px;">
+                      <tbody class="top-header" style="background-image: url('https://aperabags.com/wp-content/uploads/2019/08/image_from_ios_email2.jpg');background-position: center center; background-size: cover; padding: 0px;">
                         <tr>
                           <th class="shop-link">
                             <a href="https://aperabags.com/shop/"><span>SHOP</span></a>
                           </th>
                           <th>
                             <a href="https://aperabags.com/">
-                            <img src="https://aperabags.com/wp-content/uploads/2019/05/long-logo-white.png" style="max-width: 200px;" class="text-center" /></a>
+                            <img src="https://aperabags.com/wp-content/uploads/2019/05/long-logo-white.png" style="max-width: 175px;" class="text-center" /></a>
                           </th>
                           <th class="free-shipping">
                             <span>FREE USA SHIPPING</span>
@@ -1451,76 +1437,72 @@ body.outlook p {
                       <tbody>
                         <tr>
                           <th>
-                            <tr>
-                              <th>
-                                <table class="spacer">
-                                  <tbody>
-                                    <tr>
-                                      <td height="16px" style="font-size:16px;line-height:16px;">&#xA0;</td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                                <h3 class="text-center">Hi {Name (First):14.3}!</h3>
-                                <p class="text-center">Thank you for submitting your Apera Ambassador Program application!<br />We've received it and our team will be getting back to you very soon.</p>
-                              </th>
-                            </tr>
-                            <tr>
-                              <td class="text-center">
-                                <p class="text-left" style="margin: auto; width: 75%;">Sincerely,<br>
-                                Team Apera<br>
-                                "The Best Darn Gym Bags" ™</p>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <table class="spacer">
-                                  <tbody>
-                                    <tr>
-                                      <td height="16px" style="font-size:16px;line-height:16px;">&#xA0;</td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                                <h5 class="text-center">Check us out on social media!</h5>
-                              </td>
-                            </tr>
+                            <table class="spacer">
+                              <tbody>
+                                <tr>
+                                  <td height="16px" style="font-size:16px;line-height:16px;">&#xA0;</td>
+                                </tr>
+                              </tbody>
+                            </table>
                           </th>
+                        <tr>
+                          <td class="text-center">
+                            <br />
+                            <p class="text-left" style="margin: auto; width: 75%;">Hi {Name (First):14.3}!</p><br /><br />
+                            <p class="text-left" style="margin: auto; width: 75%;">Thank you for submitting your Apera Ambassador Program application! We've received it and our team will be getting back to you very soon.</p><br /><br />
+                            <p class="text-left" style="margin: auto; width: 75%;">Sincerely,<br>
+                            Team Apera<br>
+                            "The Best Darn Gym Bags" ™</p><br />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <table class="spacer">
+                              <tbody>
+                                <tr>
+                                  <td height="16px" style="font-size:16px;line-height:16px;">&#xA0;</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <h5 class="text-center">Check us out on social media!</h5><br />
+                          </td>
                         </tr>
                       </tbody>
                         <table class="row collapse">
                           <tbody>
                             <tr>
-                              <th class="small-6 large-2 columns first">
+                              <th class="small-2 large-2 columns first">
                                 <table>
                                   <tr>
                                     <th></th>
                                   </tr>
                                 </table>
                               </th>
-                              <th class="small-6 large-2 columns first">
+                              <th class="small-2 large-2 columns first">
                                 <table>
                                   <tr>
-                                    <th><a href="https://www.instagram.com/aperabags/"><img width="25" height="25" src="https://aperabags.com/wp-content/uploads/2019/08/Instagram-icon-small.png"></a></th>
+                                    <th style="padding: 8px;"><a href="https://www.instagram.com/aperabags/"><img width="25" height="25" src="https://aperabags.com/wp-content/uploads/2019/08/Instagram-icon-small.png"></a></th>
                                   </tr>
                                 </table>
                               </th>
-                              <th class="small-6 large-2 columns first">
+                              <th class="small-2 large-2 columns first">
                                 <table>
                                   <tr>
-                                    <th><a href="https://www.facebook.com/aperabags/"><img width="25" height="25" src="https://aperabags.com/wp-content/uploads/2019/08/facebook-icon-small.png"></a></th>
+                                    <th style="padding: 8px;"><a href="https://www.facebook.com/aperabags/"><img width="25" height="25" src="https://aperabags.com/wp-content/uploads/2019/08/facebook-icon-small.png"></a></th>
                                   </tr>
                                 </table>
                               </th>
-                              <th class="small-6 large-2 columns first">
+                              <th class="small-2 large-2 columns first">
                                 <table>
                                   <tr>
-                                    <th><a href="https://twitter.com/aperabags/"><img width="25" height="25" src="https://aperabags.com/wp-content/uploads/2019/08/twitter-icon-small.png"></a></th>
+                                    <th style="padding: 8px;"><a href="https://twitter.com/aperabags/"><img width="25" height="25" src="https://aperabags.com/wp-content/uploads/2019/08/twitter-icon-small.png"></a></th>
                                   </tr>
                                 </table>
                               </th>
-                              <th class="small-6 large-2 columns last">
+                              <th class="small-2 large-2 columns last">
                                 <table>
                                   <tr>
-                                    <th><a href="https://www.pinterest.com/aperabags/"><img width="25" height="25" src="https://aperabags.com/wp-content/uploads/2019/08/pinterest-icon-small.png"></a></th>
+                                    <th style="padding: 8px;"><a href="https://www.pinterest.com/aperabags/"><img width="25" height="25" src="https://aperabags.com/wp-content/uploads/2019/08/pinterest-icon-small.png"></a></th>
                                   </tr>
                                 </table>
                               </th>
