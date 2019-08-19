@@ -110,6 +110,20 @@ tbody.top-header th.free-shipping a {
   font-weight: 600;
 }
 
+table.button.expanded td a.wonka-btn {
+  display: flex;
+  margin: auto;
+  padding: 8px;
+  width: 220px;
+  color: #ffffff;
+  background: #52abf6;
+  border-radius: 100px;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.6);
+}
+
 @media only screen {
   html {
     min-height: 100%;
@@ -1461,15 +1475,13 @@ body.outlook p {
                           <td class="text-center">
                             <br />
                             <p class="text-left" style="margin: auto; width: 75%;">Hi [FIRST NAME]!</p><br /><br />
-                            <p class="text-left" style="margin: auto; width: 75%;">Welcome to the Apera Ambassador Program! We are so happy to have you join our community of amazing fitness enthusiasts across the country. As a member of team, we encourage you to keep reaching your goals and continue to  inspire others to achieve their goals along the way! My name is Karin, the Community Coordinator at Apera. You can see me as your go-to person for ambassador updates and any questions regarding the program. So… let’s get started! Below you will find your new ambassador code:</p><br /><br />
-                            <p class="text-center">
-                              <strong>YOUR AMBASSADOR CODE:</strong><br />
-                              [TOKEN UNIQUE ZIP CODE]
-                            </p><br />
-                            <p class="text-center">
-                              <strong>YOUR SHARABLE LINK:</strong><br />
-                              [TOKEN UNIQUE AMBASSADOR LINK]
-                            </p><br /><br />
+                            <p class="text-left" style="margin: auto; width: 75%;">Welcome to the Apera Ambassador Program! We are so happy to have you join our community of amazing fitness enthusiasts across the country. As a member of team, we encourage you to keep reaching your goals and continue to  inspire others to achieve their goals along the way! My name is Karin, the Community Coordinator at Apera. You can see me as your go-to person for ambassador updates and any questions regarding the program. So… let’s get started! Below you will find a link to complete your registration:</p><br /><br />
+                            <table class="button expanded rounded text-center">
+                              <tr>
+                                <td class="text-center"><a class="wonka-btn" href="https://aperabags.com/ambassador-registration">Complete Registration</a>
+                                </td>
+                              </tr>
+                            </table><br /><br />
                             <p class="text-left" style="margin: auto; width: 75%;">Sharing this code with your audience will give them 20% off their purchase and help you earn commission of their sale!</p><br /><br />
                             <p class="text-left" style="margin: auto; width: 75%;">I’ll be back in touch soon with some helpful tips in the coming weeks. Please reach out to me with any questions and welcome to the Apera Ambassador Program!</p><br /><br />
                             <p class="text-left" style="margin: auto; width: 75%;">Sincerely,<br>
