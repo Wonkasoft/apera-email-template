@@ -1423,10 +1423,26 @@ body.outlook p {
       #product-table span {
         display: inline-block;
       }
+      
+      /*preheader styles*/
+      span.preheader {
+        display:none !important;
+        visibility:hidden;
+        mso-hide:all !important;
+        font-size:1px;
+        color: #fff; // needs to match background color
+        line-height:1px;
+        max-height:0px;
+        max-width:0px;
+        opacity:0;
+        overflow:hidden;
+      }
     </style>  
   </head>
 
   <body>
+    <!-- <style> -->
+    <span class="preheader">All bags are 20% OFF today - Tuesday 9/3!</span>
     <!-- <style> -->
     <table class="body" data-made-with-foundation="">
       <tr>
