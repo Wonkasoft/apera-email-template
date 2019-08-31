@@ -104,7 +104,15 @@ p {
 
   margin: 0 0 0 10px;
 
-  Margin: 0 0 0 10px; }
+  Margin: 0 0 0 10px; 
+
+  -webkit-hyphens: none;
+
+  -moz-hyphens: none;
+
+  hyphens: none;
+  
+}
 
 table {
 
@@ -116,11 +124,11 @@ td {
 
   word-wrap: break-word;
 
-  -webkit-hyphens: auto;
+  -webkit-hyphens: none;
 
-  -moz-hyphens: auto;
+  -moz-hyphens: none;
 
-  hyphens: auto;
+  hyphens: none;
 
   padding: 8px;
 
@@ -2368,20 +2376,6 @@ body.outlook p {
 
     }
 
-    /*preheader styles*/
-    span.preheader {
-      display:none !important;
-      visibility:hidden;
-      mso-hide:all !important;
-      font-size:1px;
-      color: #fff; // needs to match background color
-      line-height:1px;
-      max-height:0px;
-      max-width:0px;
-      opacity:0;
-      overflow:hidden;
-    }
-
     </style>  
 
     <style>
@@ -2419,7 +2413,7 @@ body.outlook p {
   <body>
 
     <!-- <style> -->
-    <span class="preheader"></span>
+    <span class="preheader">Thanks for applying! Unfortunately, your application was not approved.</span><br />
     
     <table class="body" data-made-with-foundation="">
 
