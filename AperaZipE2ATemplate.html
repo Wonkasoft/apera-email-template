@@ -10,7 +10,7 @@
 
     <title>The All New Apera</title>
 
-    <style>
+<style>
 
       @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,600,600i,700,700i&display=swap');
 
@@ -26,7 +26,7 @@ body {
 
   width: 100% !important;
 
-  max-width: 650px;
+  max-width: 600px;
 
   -webkit-text-size-adjust: 100%;
 
@@ -98,7 +98,7 @@ center {
 
   width: 100%;
 
-  min-width: 650px; }
+  min-width: 600px; }
 
 a img {
 
@@ -109,11 +109,11 @@ p {
   margin: 0 0 0 10px;
 
   Margin: 0 0 0 10px; 
-
+  
   -webkit-hyphens: none;
-  
+
   -moz-hyphens: none;
-  
+
   hyphens: none;
 }
 
@@ -128,9 +128,9 @@ td {
   word-wrap: break-word;
 
   -webkit-hyphens: none;
-  
+
   -moz-hyphens: none;
-  
+
   hyphens: none;
 
   padding: 8px;
@@ -147,9 +147,9 @@ table, tr, td {
 
 tbody.top-header th {
 
-  width: 33.2%;
+  width: 100%;
 
-  padding: 8px 15px;
+  padding: 15px 15px 0;
 
   color: #ffffff;
 
@@ -158,21 +158,16 @@ tbody.top-header th {
 }
 
 tbody.top-header th.shop-link {
-
-  text-align: left;
-
+  text-align: center;
   font-weight: 600;
-
+  padding: 0 15px 15px;
 }
 
 tbody.top-header th.shop-link a {
 
   color: #ffffff;
-
   font-family: "Josefin Sans", sans-serif;
-
   font-size: .9rem;
-
   font-weight: 600;
 
 }
@@ -195,32 +190,6 @@ tbody.top-header th.free-shipping a {
 
 }
 
-table.button.expanded td a.wonka-btn {
-
-  display: flex;
-
-  margin: auto;
-
-  padding: 8px;
-
-  width: 220px;
-
-  color: #ffffff;
-
-  background: #52abf6;
-
-  border-radius: 100px;
-
-  align-items: center;
-
-  justify-content: center;
-
-  text-transform: uppercase;
-
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,.6);
-
-}
-
 @media only screen {
 
   html {
@@ -239,9 +208,7 @@ table.body {
 
 table.container {
 
-  background: #fefefe;
-
-  width: 650px;
+  width: 600px;
 
   margin: 0 auto;
 
@@ -1705,9 +1672,9 @@ table.button {
 
   width: auto;
 
-  margin: 0 0 16px 0;
+  margin: 0 0 30px 0;
 
-  Margin: 0 0 16px 0; }
+  Margin: 0 0 30px 0; }
 
   table.button table td {
 
@@ -1750,6 +1717,20 @@ table.button {
     border-radius: 500px;
 
     border: none; }
+
+  table.button.expanded td a.wonka-btn {
+    display: flex;
+    margin: auto;
+    padding: 8px;
+    width: 220px;
+    color: #ffffff;
+    background: #52abf6;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.6);
+  }
 
 table.button:hover table tr td a,
 
@@ -2403,6 +2384,7 @@ body.outlook p {
 
     }
 
+
     </style>  
 
     <style>
@@ -2417,20 +2399,159 @@ body.outlook p {
 
       }
 
-      
-
-      .container.header {
-
-        background: #f3f3f3;
-
+      table.body > tbody > tr > td {
+        background: #e6e6e6;
+        padding: 0 15px;
       }
 
-      
+      .container.header {
+        background: #f3f3f3;
+      }
 
-      .body-border {
+      .social-area, .bg-light {
+        background: #fafafa;
+      }
 
+      .social-area {
+        padding: 30px 15px 0;
+      }
+
+      .body-border > td {
         border-top: 8px solid #52abf6;
+        position: relative;
+        padding: 30px 15px;
+      }
 
+      .body-border > td:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: calc( 50% - 15px );
+          border: 15px solid transparent;
+          border-top-color: #52abf6;
+      }
+
+      .body-border > td:after {
+          content: "";
+          position: absolute;
+          bottom: -30px;
+          left: calc( 50% - 15px );
+          border: 15px solid transparent;
+          border-top-color: #e6e6e6;
+      }
+
+      .body-border > td p {
+        margin: 0;
+      }
+
+      .body-border > td p:not( :last-child ) {
+        margin: 0 auto 30px;
+      }
+
+      .bg-light > td {
+        padding: 30px 15px;
+      }
+
+      .bg-light > td p {
+        margin: 0;
+      }
+
+      .bg-light > td p:not( :last-child ) {
+        margin: 0 auto 30px;
+      }
+
+      .bg-apera-logo {
+        background: url("https://aperabags.com/wp-content/uploads/2019/05/Logo-White-8.png");
+        background-size: cover;
+        background-position: center 20px;
+        background-repeat: no-repeat;
+      }
+
+      .bg-apera-logo > td {
+        background: rgba( 250, 250, 250, .85 );
+        padding: 30px 15px 0;
+      }
+
+      .bg-dark {
+        background: rgba( 51, 62, 72, 1 );
+      }
+
+      .bg-dark > td {
+        padding: 30px 15px;
+      }
+
+      .ig-table tbody td {
+        padding: 8px;
+      }
+
+      .bg-dark > td h1 {
+        color: #fff;
+        margin: 0 auto 15px;
+      }
+
+      .body-title {
+        font-weight: 700;
+        margin-bottom: 30px;
+      }
+
+      .body-border p .coordinator-image {
+        width: 60px;
+        height: 60px;
+      }
+
+      .coordinator-image {
+        border-radius: 50%;
+      }
+
+      img.margin-right {
+        margin-right: 15px;
+      }
+
+      .title-underline {
+        display: inline-block;
+        border-bottom: 8px solid #52abf6;
+      }
+
+      table.difference-table {
+        margin: 0 -15px;
+        width: calc( 100% + 30px );
+      }
+
+      .difference-table td {
+        padding: 30px 15px;
+        width: 50%;
+      }
+
+      .difference-table td ul {
+        padding: 0 8px;
+        list-style: none;
+      }
+
+      .difference-table td ul li {
+        margin: 8px;
+      }
+
+      .difference-table td ul li:before {
+        content: "\2022";
+        margin-right: 4px;
+        font-size: 1.2rem;
+      }
+
+      .difference-table .refersion-side {
+        background: rgba( 240, 240, 240, .5 );
+      }
+
+      .difference-table .apera-side {
+        background: rgba( 220, 220, 220, .5 );
+      }
+
+      .difference-table img {
+        max-width: 80%;
+        margin: auto;
+      }
+
+      .top-header img {
+        max-width: 325px;
       }
 
     </style>
@@ -2442,27 +2563,13 @@ body.outlook p {
     <!-- <style> -->
     <span class="preheader">Howdy partner! You’re now a part of the Apera Zip Program!</span><br />
     
-    <table class="body" data-made-with-foundation="">
+    <table class="body">
 
       <tr>
 
         <td class="float-center" align="center" valign="top">
 
           <center data-parsed="">
-
-            <table class="spacer float-center">
-
-              <tbody>
-
-                <tr>
-
-                  <td height="16px" style="font-size:16px;line-height:16px;">&#xA0;</td>
-
-                </tr>
-
-              </tbody>
-
-            </table>
 
             <table align="center" class="container header float-center">
 
@@ -2474,27 +2581,24 @@ body.outlook p {
 
                     <table class="row">
 
-                      <tbody class="top-header" style="background-image: url('https://aperabags.com/wp-content/uploads/2019/08/image_from_ios_email2.jpg');background-position: center center; background-size: cover; padding: 0px;">
+                      <tbody class="top-header" style="background: linear-gradient( 180deg, rgba( 51, 62, 72, 1 ) 25%, rgba( 51, 62, 72, 0 ) 80% ), url('https://aperabags.com/wp-content/uploads/2019/10/email-header-image.jpg'); background-position: center center; background-size: cover; padding: 0px;">
 
                         <tr>
-
-                          <th class="shop-link">
-
-                            <a href="https://aperabags.com/shop/"><span>SHOP</span></a>
-
-                          </th>
 
                           <th>
 
                             <a href="https://aperabags.com/shop/">
-
-                            <img src="https://aperabags.com/wp-content/uploads/2019/05/long-logo-white.png" class="text-center" /></a>
+                              <img createnew="true" src="https://aperabags.com/wp-content/uploads/2019/05/long-logo-white.png" class="text-center" />
+                            </a>
 
                           </th>
 
-                          <th class="free-shipping">
+                        </tr>
+                        <tr>
 
-                            <a href="https://aperabags.com/shop/">
+                          <th class="shop-link">
+
+                            <a href="https://aperabags.com/shop/"><span>SHOP</span></a> | <a href="https://aperabags.com/shop/">
 
                               <span>FREE CUSTOM LOGOS</span>
 
@@ -2516,7 +2620,7 @@ body.outlook p {
 
             </table>
 
-            <table align="center" class="container body-border float-center">
+            <table align="center" class="container float-center">
 
               <tbody>
 
@@ -2528,139 +2632,183 @@ body.outlook p {
 
                       <tbody>
 
-                        <tr>
-
-                          <th>
-
-                            <table class="spacer">
-
-                              <tbody>
-
-                                <tr>
-
-                                  <td height="16px" style="font-size:16px;line-height:16px;">&#xA0;</td>
-
-                                </tr>
-
-                              </tbody>
-
-                            </table>
-
-                          </th>
-
-                        <tr>
+                        <tr class="body-border">
 
                           <td class="text-center">
 
-                            <br />
+                            <h2 class="body-title text-center">Hi [[clubgymname]]!<br />
+                              Welcome to the Zip Program!
+                            </h2>
 
-                            <p class="text-left" style="margin: auto; width: 75%;">Hi [[clubgymname]]!</p><br /><br />
-
-                            <p class="text-left" style="margin: auto; width: 75%;">Welcome to the Zip Program! We are so happy to have you join our team of amazing gyms and clubs across the country. As a partner of ours, we encourage you to keep growing as an organization and continue to  inspire others to achieve their fitness and health goals along the way! My name is Karin, the Community Coordinator at Apera. You can see me as your go-to person for program updates and any questions regarding the program.</p><br /><br>
-
-                            <p class="text-left" style="margin: auto; width: 75%;">So… let’s get started! Please click the link below to complete filling out your profile on our referral program portal: Referison!</p><br /><br>
-
-                            <p class="text-center">
-
-                              <table class="button expanded rounded text-center">
-
-                                <tr>
-
-                                  <td class="text-center"><a class="wonka-btn" href="https://aperabags.com/zip-registration">Complete Registration</a>
-
-                                  </td>
-
-                                </tr>
-
-                              </table>
-
-                            </p><br /><br />
-
-                            <p class="text-left" style="margin: auto; width: 75%;">
-
-                              Once your Referison profile is set up, you will receive your unique Zip code and shareable link. Your members will be able to use your Zip code to get 20% off their entire Apera bag purchase, place your logo on their bags,and allow you to earn commission on their purchases!
-
-                            </p><br /><br />
-
-                            <p class="text-left" style="margin: auto; width: 75%;">
-
-                              I’ll be back in touch soon with some helpful tips in the next few days. Please feel free to reach out to me with any questions and welcome to the Apera Zip Program!
-
-                            </p><br /><br />
-
-                            <p class="text-left" style="margin: auto; width: 75%;">Sincerely,<br />
-
-                            <img src="https://aperabags.com/wp-content/uploads/2019/08/karin-headshot-small.jpg" /><br />
-
-                            Karin, Community Coordinator<br />
-
-                            "The Best Darn Gym Bags" ™</p><br />
+                            <p class="text-left"><img src="https://aperabags.com/wp-content/uploads/2019/08/karin-headshot-small.jpg" class="coordinator-image float-left margin-right" />We are so happy to have you join our team of amazing gyms and clubs across the country. As a partner of ours, we encourage you to keep growing as an organization and continue to  inspire others to achieve their fitness and health goals along the way! My name is Karin, the Community Coordinator at Apera. You can see me as your go-to person for program updates and any questions regarding the program.</p>
 
                           </td>
 
                         </tr>
+                        <tr class="bg-light bg-apera-logo">
+                          <td class="text-center">
+                            <h3 class="body-title text-center title-underline">So… let’s get started!</h3>
+
+                            <p class="text-left">Please click the link below to complete filling out your profile on our referral program portal: Referison!</p>
+
+                            <table class="button expanded rounded text-center">
+
+                              <tr>
+
+                                <td class="text-center">
+
+                                  <a class="wonka-btn" href="https://aperabags.com/zip-registration">Complete Registration</a>
+
+                                </td>
+
+                              </tr>
+
+                            </table>
+
+                            <p class="text-left">
+                              Once your Referison profile is set up, you will receive your unique Zip code and shareable link. Your members will be able to use your Zip code to get 20% off their entire Apera bag purchase, place your logo on their bags,and allow you to earn commission on their purchases!</p>
+
+                              <h3 class="body-title text-center">What’s the difference between my Refersion account and my Apera account?</h3>
+
+                              <p class="text-left">Your Refersion account and your Apera account are two separate accounts. Your Refersion account is your portal to track your sales, what Apera products your audience is buying, and manage the commission you’ve earned. Your Apera account is where you can go to purchase your own Apera gear and track your Apera orders.</p>
+                              
+                              <table class="row difference-table">
+                                <tr>
+                                  <td class="refersion-side">
+                                    <img src="https://multimedia.getresponse.com/getresponse-G8dbp/photos/a5488b21-fbed-44fe-b68f-1258af28908f.png" class="refersion-logo" />
+                                    <ul>
+                                      <li>
+                                        <span>Track sales that have been made with your promo code/unique URL</span>
+                                      </li>
+                                      <li>
+                                        <span>See what products your audience is buying</span>
+                                      </li>
+                                      <li>
+                                        <span>Manage the commission you’ve earned</span>
+                                      </li>
+                                    </ul>
+                                  </td>
+                                  <td class="apera-side">
+                                    <img src="https://multimedia.getresponse.com/getresponse-G8dbp/photos/5cd7083b-95ce-4b97-b6dc-42f28807e6a9.png" class="refersion-logo" />
+                                    <ul>
+                                      <li>
+                                        <span>Purchase your own Apera gear</span>
+                                      </li>
+                                      <li>
+                                        <span>Track your Apera orders</span>
+                                      </li>
+                                    </ul>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr class="bg-light">
+                            <td>
+                              <p class="text-left">
+                                I’ll be back in touch soon with some helpful tips in the next few days. Please feel free to reach out to me with any questions and welcome to the Apera Zip Program!
+                              </p>
+
+                              <p class="text-left">Sincerely,<br />
+
+                                <img src="https://aperabags.com/wp-content/uploads/2019/08/karin-headshot-small.jpg" class="coordinator-image" /><br />
+
+                              Karin, Community Coordinator<br />
+
+                              "The Best Darn Gym Bags" ™</p>
+                          </td>
+                        </tr>
+                        <tr class="bg-dark">
+                          <td>
+                          <table class="ig-table">
+
+                            <thead>
+                              <tr>
+                                <th colspan="3">
+                                  <h1 class="body-title text-center">Get Inspired</h1>
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+
+                              <tr>
+                                <td>
+                                  <img src="https://multimedia.getresponse.com/getresponse-G8dbp/photos/7e26654d-65d6-4f33-ba45-071fb1806298.jpg" class="ig-images" />
+                                </td>
+                                <td>
+                                  <img src="https://multimedia.getresponse.com/getresponse-G8dbp/photos/84e2d2f4-dca0-42df-b828-43072197f9e0.jpg" class="ig-images" />
+                                </td>
+                                <td>
+                                  <img src="https://multimedia.getresponse.com/getresponse-G8dbp/photos/6544e4cb-8fbc-4c08-83f8-65b1ec765dba.jpg" class="ig-images" />
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <img src="https://multimedia.getresponse.com/getresponse-G8dbp/photos/7e26654d-65d6-4f33-ba45-071fb1806298.jpg" class="ig-images" />
+                                </td>
+                                <td>
+                                  <img src="https://multimedia.getresponse.com/getresponse-G8dbp/photos/38247a04-f934-4800-a14c-10fdd327dc36.jpg" class="ig-images" />
+                                </td>
+                                <td>
+                                  <img src="https://multimedia.getresponse.com/getresponse-G8dbp/photos/4026a4d9-e29b-4362-88ce-b3cc360a38b8.jpg" class="ig-images" />
+                                </td>
+                              </tr>
+
+                            </tbody>
+
+                          </table>
+                        </td>
+                        </tr>
 
                         <tr>
 
-                          <td>
+                          <td class="social-area">
 
-                            <table class="spacer">
+                            <p class="text-center">Check us out on social media!</p><br />
+                            <table class="row collapse">
 
                               <tbody>
 
                                 <tr>
 
-                                  <td height="16px" style="font-size:16px;line-height:16px;">&#xA0;</td>
+                                  <th class="small-12 large-2 columns first">
+
+                                    <table>
+
+                                      <tr>
+
+                                        <th style="padding: 8px; text-align: center;">
+
+                                          <a style="display: inline-block;" href="https://www.instagram.com/aperabags/"><img class="social-icons" width="25" height="25" src="https://aperabags.com/wp-content/uploads/2019/08/Instagram-icon-small.png"></a>
+
+                                          <a style="display: inline-block;" href="https://www.facebook.com/aperabags/"><img class="social-icons" width="25" height="25" src="https://aperabags.com/wp-content/uploads/2019/08/facebook-icon-small.png"></a>
+
+                                          <a style="display: inline-block;" href="https://twitter.com/aperabags/"><img class="social-icons" width="25" height="25" src="https://aperabags.com/wp-content/uploads/2019/08/twitter-icon-small.png"></a>
+
+                                          <a style="display: inline-block;" href="https://www.pinterest.com/aperabags/"><img class="social-icons" width="25" height="25" src="https://aperabags.com/wp-content/uploads/2019/08/pinterest-icon-small.png"></a>
+
+                                        </th>
+
+                                      </tr>
+
+                                    </table>
+
+                                  </th>
+
+                                  
 
                                 </tr>
 
                               </tbody>
 
                             </table>
-
-                            <p class="text-center">Check us out on social media!</p><br />
 
                           </td>
 
                         </tr>
 
                       </tbody>
-
-                        <table class="row collapse">
-
-                          <tbody>
-
-                            <tr>
-
-                              <th class="small-12 large-2 columns first">
-
-                                <table>
-
-                                  <tr>
-
-                                    <th style="padding: 8px; text-align: center;">
-
-                                      <a style="display: inline-block;" href="https://www.instagram.com/aperabags/"><img class="social-icons" width="25" height="25" src="https://aperabags.com/wp-content/uploads/2019/08/Instagram-icon-small.png"></a>
-
-                                      <a style="display: inline-block;" href="https://www.facebook.com/aperabags/"><img class="social-icons" width="25" height="25" src="https://aperabags.com/wp-content/uploads/2019/08/facebook-icon-small.png"></a>
-
-                                      <a style="display: inline-block;" href="https://twitter.com/aperabags/"><img class="social-icons" width="25" height="25" src="https://aperabags.com/wp-content/uploads/2019/08/twitter-icon-small.png"></a>
-
-                                      <a style="display: inline-block;" href="https://www.pinterest.com/aperabags/"><img class="social-icons" width="25" height="25" src="https://aperabags.com/wp-content/uploads/2019/08/pinterest-icon-small.png"></a>
-
-                                    </th>
-
-                                  </tr>
-
-                                </table>
-
-                              </th>
-
-                            </tr>
-
-                          </tbody>
-
-                        </table>
 
                       <tfoot style="background: #333e48;">
 

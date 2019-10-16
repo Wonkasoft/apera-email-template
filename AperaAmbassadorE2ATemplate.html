@@ -1672,9 +1672,9 @@ table.button {
 
   width: auto;
 
-  margin: 0 0 16px 0;
+  margin: 0 0 30px 0;
 
-  Margin: 0 0 16px 0; }
+  Margin: 0 0 30px 0; }
 
   table.button table td {
 
@@ -2410,7 +2410,10 @@ body.outlook p {
 
       .social-area, .bg-light {
         background: #fafafa;
-        padding: 30px 0;
+      }
+
+      .social-area {
+        padding: 30px 15px 0;
       }
 
       .body-border > td {
@@ -2438,7 +2441,11 @@ body.outlook p {
       }
 
       .body-border > td p {
-        margin: 30px auto;
+        margin: 0;
+      }
+
+      .body-border > td p:not( :last-child ) {
+        margin: 0 auto 30px;
       }
 
       .bg-light > td {
@@ -2446,20 +2453,45 @@ body.outlook p {
       }
 
       .bg-light > td p {
-        margin: 30px auto;
+        margin: 0;
+      }
+
+      .bg-light > td p:not( :last-child ) {
+        margin: 0 auto 30px;
+      }
+
+      .bg-apera-logo {
+        background: url("https://aperabags.com/wp-content/uploads/2019/05/Logo-White-8.png");
+        background-size: cover;
+        background-position: center 20px;
+        background-repeat: no-repeat;
+      }
+
+      .bg-apera-logo > td {
+        background: rgba( 250, 250, 250, .85 );
+        padding: 30px 15px 0;
       }
 
       .bg-dark {
         background: rgba( 51, 62, 72, 1 );
       }
 
-      .bg-dark h1 {
+      .bg-dark > td {
+        padding: 30px 15px;
+      }
+
+      .ig-table tbody td {
+        padding: 8px;
+      }
+
+      .bg-dark > td h1 {
         color: #fff;
-        margin: 30px auto;
+        margin: 0 auto 15px;
       }
 
       .body-title {
         font-weight: 700;
+        margin-bottom: 30px;
       }
 
       .body-border p .coordinator-image {
@@ -2477,8 +2509,12 @@ body.outlook p {
 
       .title-underline {
         display: inline-block;
-        margin: 15px auto;
         border-bottom: 8px solid #52abf6;
+      }
+
+      table.difference-table {
+        margin: 0 -15px;
+        width: calc( 100% + 30px );
       }
 
       .difference-table td {
@@ -2499,6 +2535,23 @@ body.outlook p {
         content: "\2022";
         margin-right: 4px;
         font-size: 1.2rem;
+      }
+
+      .difference-table .refersion-side {
+        background: rgba( 240, 240, 240, .5 );
+      }
+
+      .difference-table .apera-side {
+        background: rgba( 220, 220, 220, .5 );
+      }
+
+      .difference-table img {
+        max-width: 80%;
+        margin: auto;
+      }
+
+      .top-header img {
+        max-width: 325px;
       }
 
     </style>
@@ -2536,7 +2589,7 @@ body.outlook p {
 
                             <a href="https://aperabags.com/shop/">
 
-                            <img createnew="true" style="max-width: 325px;" src="https://aperabags.com/wp-content/uploads/2019/05/long-logo-white.png" class="text-center" /></a>
+                            <img createnew="true" src="https://aperabags.com/wp-content/uploads/2019/05/long-logo-white.png" class="text-center" /></a>
 
                           </th>
 
@@ -2588,7 +2641,7 @@ body.outlook p {
 
                         </tr>
 
-                        <tr class="bg-light">
+                        <tr class="bg-light bg-apera-logo">
                           <td class="text-center">
                             <h3 class="body-title text-center title-underline">So… let’s get started!</h3>
                             <p class="text-left">Please click the link below to complete filling out your profile on our referral program portal: Referison!</p>
@@ -2611,14 +2664,10 @@ body.outlook p {
 
                             <p class="text-left">Your Refersion account and your Apera account are two separate accounts. Your Refersion account is your portal to track your sales, what Apera products your audience is buying, and manage the commission you’ve earned. Your Apera account is where you can go to purchase your own Apera gear and track your Apera orders.</p>
 
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
                             <table class="row difference-table">
                               <tr>
-                                <td>
-                                  <h4>Refersion Account:</h4>
+                                <td class="refersion-side">
+                                  <img src="https://multimedia.getresponse.com/getresponse-G8dbp/photos/a5488b21-fbed-44fe-b68f-1258af28908f.png" class="refersion-logo" />
                                   <ul>
                                     <li>
                                       <span>Track sales that have been made with your promo code/unique URL</span>
@@ -2631,8 +2680,8 @@ body.outlook p {
                                     </li>
                                   </ul>
                                 </td>
-                                <td>
-                                  <h4>Apera Account:</h4>
+                                <td class="apera-side">
+                                  <img src="https://multimedia.getresponse.com/getresponse-G8dbp/photos/5cd7083b-95ce-4b97-b6dc-42f28807e6a9.png" class="refersion-logo" />
                                   <ul>
                                     <li>
                                       <span>Purchase your own Apera gear</span>
@@ -2646,14 +2695,13 @@ body.outlook p {
                             </table>
                           </td>
                         </tr>
-
                         <tr class="bg-light">
                           <td>
                             <p class="text-left"> I’ll be back in touch soon with some helpful tips in the next few days. Please feel free to reach out to me with any questions and welcome to the Apera Ambassador Program!</p>
 
-                            <p class="text-left">Sincerely,<br>
+                            <p class="text-left">Sincerely,<br />
 
-                            <img src="https://aperabags.com/wp-content/uploads/2019/08/karin-headshot-small.jpg" class="coordinator-image" /><br />
+                              <img src="https://aperabags.com/wp-content/uploads/2019/08/karin-headshot-small.jpg" class="coordinator-image" /><br />
 
                             Karin, Community Coordinator<br />
 
@@ -2662,9 +2710,47 @@ body.outlook p {
                         </tr>
                         <tr class="bg-dark">
                           <td>
-                            <h1 class="body-title text-center">Get Inspired</h1>
-                          </td>
+                          <table class="ig-table">
+
+                            <thead>
+                              <tr>
+                                <th colspan="3">
+                                  <h1 class="body-title text-center">Get Inspired</h1>
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+
+                              <tr>
+                                <td>
+                                  <img src="https://multimedia.getresponse.com/getresponse-G8dbp/photos/7e26654d-65d6-4f33-ba45-071fb1806298.jpg" class="ig-images" />
+                                </td>
+                                <td>
+                                  <img src="https://multimedia.getresponse.com/getresponse-G8dbp/photos/84e2d2f4-dca0-42df-b828-43072197f9e0.jpg" class="ig-images" />
+                                </td>
+                                <td>
+                                  <img src="https://multimedia.getresponse.com/getresponse-G8dbp/photos/6544e4cb-8fbc-4c08-83f8-65b1ec765dba.jpg" class="ig-images" />
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <img src="https://multimedia.getresponse.com/getresponse-G8dbp/photos/7e26654d-65d6-4f33-ba45-071fb1806298.jpg" class="ig-images" />
+                                </td>
+                                <td>
+                                  <img src="https://multimedia.getresponse.com/getresponse-G8dbp/photos/38247a04-f934-4800-a14c-10fdd327dc36.jpg" class="ig-images" />
+                                </td>
+                                <td>
+                                  <img src="https://multimedia.getresponse.com/getresponse-G8dbp/photos/4026a4d9-e29b-4362-88ce-b3cc360a38b8.jpg" class="ig-images" />
+                                </td>
+                              </tr>
+
+                            </tbody>
+
+                          </table>
+                        </td>
                         </tr>
+
                         <tr>
 
                           <td class="social-area">
