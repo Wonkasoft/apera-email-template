@@ -12,41 +12,37 @@
 
 <style>
 
-      @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,600,600i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,600,600i,700,700i&display=swap');
 
-      .wrapper {
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; 
+}
 
-  width: 100%; }
+.wrapper {
+  width: 100%; 
+}
 
 #outlook a {
 
-  padding: 0; }
+  padding: 0; 
+}
 
 body {
-
   width: 100% !important;
-
   max-width: 600px;
-
   -webkit-text-size-adjust: 100%;
-
   -ms-text-size-adjust: 100%;
-
   margin: 0 auto;
-
   Margin: 0 auto;
-
   font-family: "Josefin Sans", sans-serif;
-
   font-weight: normal;
-
   padding: 0;
-
   -moz-box-sizing: border-box;
-
   -webkit-box-sizing: border-box;
-
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+}
 
 .ExternalClass {
 
@@ -1722,7 +1718,7 @@ table.button {
     display: flex;
     margin: auto;
     padding: 8px;
-    width: 220px;
+    width: 270px;
     color: #ffffff;
     background: #52abf6;
     border-radius: 100px;
@@ -2419,33 +2415,33 @@ body.outlook p {
       .body-border > td {
         border-top: 8px solid #52abf6;
         position: relative;
-        padding: 30px 15px;
+        padding: 0 15px;
       }
 
-      .body-border > td:before {
+      .body-border > td .body-title {
+        margin: 30px auto;
+      }
+
+      .body-border > td::before {
           content: "";
-          position: absolute;
-          top: 0;
-          left: calc( 50% - 15px );
+          position: relative;
+          top: 13px;
+          width: 100%;
           border: 15px solid transparent;
           border-top-color: #52abf6;
       }
 
-      .body-border > td:after {
+      .body-border > td::after {
           content: "";
-          position: absolute;
+          position: relative;
           bottom: -30px;
-          left: calc( 50% - 15px );
+          width: 100%;
           border: 15px solid transparent;
           border-top-color: #e6e6e6;
       }
 
       .body-border > td p {
-        margin: 0;
-      }
-
-      .body-border > td p:not( :last-child ) {
-        margin: 0 auto 30px;
+        margin: 0 0 30px;
       }
 
       .bg-light > td {
@@ -2531,7 +2527,7 @@ body.outlook p {
         margin: 8px;
       }
 
-      .difference-table td ul li:before {
+      .difference-table td ul li::before  {
         content: "\2022";
         margin-right: 4px;
         font-size: 1.2rem;
@@ -2551,7 +2547,8 @@ body.outlook p {
       }
 
       .top-header img {
-        max-width: 325px;
+        width: 80%;
+        max-width: 300px;
       }
 
     </style>
