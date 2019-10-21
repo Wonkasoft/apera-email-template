@@ -2551,6 +2551,57 @@ body.outlook p {
         max-width: 300px;
       }
 
+      table.checkers {
+        width: 100%;
+      }
+
+      table.checkers tbody td {
+        text-align: center;
+        width: 50%;
+        vertical-align: middle;
+      }
+
+      table.checkers tbody td ul {
+        list-style: none;
+      }
+
+      table.checkers tbody td ul li {
+        margin: 0 auto 30px;
+      }
+
+      table.checkers tbody td ul li a.wonka-btn {
+        display: grid;
+        margin: auto;
+        height: 35px;
+        width: 270px;
+        color: #ffffff;
+        background: #52abf6;
+        border-radius: 100px;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        line-height: 2;
+        box-shadow: 0 1px 4px 0 rgba(0,0,0,.6);
+      }
+
+      table.checkers tbody .badge {
+        display: inline-grid;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        background: #343e47;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-size: 2.8rem;
+        line-height: 1.3;
+      }
+
+      .guide, .stash-img {
+        margin: auto;
+        max-width:250px;
+      }
+
     </style>
 
   </head>
@@ -2629,7 +2680,7 @@ body.outlook p {
 
                           <td class="text-center">
 
-                            <p class="text-left">Hi [[firstname]]!</p>
+                            <h2 class="text-center body-title">Hi [[firstname]]!</h2>
 
                             <p class="text-left">We know you have what it takes to be a badass ambassador and start earning a commission on the sales you generate! In order to do this, we are giving you some resources so you can be successful!
                             </p>
@@ -2638,41 +2689,49 @@ body.outlook p {
                         </tr>
                         <tr class="bg-light">
                           <td>
-                            <p class="text-left">
-
-                              <a style="padding-bottom: 15px; display: inline-block;" href="https://www.dropbox.com/sh/jth5toljj993fnu/AAC5ZzahssRwtkMajqHs1ck_a?dl=0"><span>1) PHOTO STASH
-
-Use some of our favorite content from our stash to get to posting!</span>
- <span style="width: 90%; text-align: center; display: inline-block; padding: 0 25px; position: relative;"><img style="width: 80px; height: 70px; display: inline-block; vertical-align: middle;background: #fff; border: 1px solid rgba(0,0,0,.2); padding: 4px 4px 20px; box-shadow: 0 1px 6px 0 rgba(0,0,0,.1); transform: rotate( -25deg ); object-fit: cover;" src="https://multimedia.getresponse.com/getresponse-G8dbp/photos/32bc8d77-5c2c-4702-895c-3189430812bf.jpg" /> <img style="margin-left: -55px; width: 80px; height: 70px; display: inline-block; vertical-align: middle;background: #fff; border: 1px solid rgba(0,0,0,.2); padding: 4px 4px 20px; box-shadow: 0 1px 6px 0 rgba(0,0,0,.1); transform: rotate( 15deg ); object-fit: cover;" src="https://multimedia.getresponse.com/getresponse-G8dbp/photos/b8e91895-2cf3-4574-a952-eb3369696169.jpg" /></span></a>
-
-                            </p>
+                            <table class="table checkers">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <ul>
+                                      <li>
+                                        <span class="badge">1</span>
+                                      </li>
+                                      <li>
+                                        <span class="item-name">Ambassador Guide</span>
+                                      </li>
+                                      <li>
+                                        <a href="#" class="wonka-btn">Download the Guide</a>
+                                      </li>
+                                    </ul>
+                                  </td>
+                                  <td>
+                                    <a href="#"><img src="https://multimedia.getresponse.com/getresponse-G8dbp/photos/99164592-cd3b-4263-af63-411c4954a243.png" class="guide" /></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a href="https://www.dropbox.com/sh/jth5toljj993fnu/AAC5ZzahssRwtkMajqHs1ck_a?dl=0"><img src="https://multimedia.getresponse.com/getresponse-G8dbp/photos/7042270a-d9e8-4d85-bb27-f4eebe99bdef.png" class="stash-img" /></a>
+                                  </td>
+                                  <td>
+                                    <ul>
+                                      <li>
+                                        <span class="badge">2</span>
+                                      </li>
+                                      <li>
+                                        <span class="item-name">Photo Stash</span>
+                                      </li>
+                                      <li>
+                                        <a href="https://www.dropbox.com/sh/jth5toljj993fnu/AAC5ZzahssRwtkMajqHs1ck_a?dl=0" class="wonka-btn">Get Social Content</a>
+                                      </li>
+                                    </ul>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
 
                             <p class="text-left">
                               Remember, I am here to help make sure you’re getting the most out of your ambassador status, so as always, let me know if you have any questions!
-                            </p>
-
-                            <p class="text-center">
-
-                              <strong>YOUR AMBASSADOR CODE:</strong><br />
-
-                              [[discount_code]]
-
-                            </p>
-
-                            <p class="text-center">
-
-                              <strong>YOUR SHARABLE LINK:</strong><br />
-
-                              [[affiliate_link]]
-
-                            </p>
-
-                            <p class="text-center">
-
-                              <strong>YOUR AMBASSADOR PROGRAM DASHBOARD:</strong><br />
-
-                              https://apera.refersion.com/affiliate/login
-
                             </p>
 
                             <p class="text-left">Sincerely,<br />
@@ -2685,6 +2744,33 @@ Use some of our favorite content from our stash to get to posting!</span>
 
                           </td>
 
+                        </tr>
+                        <tr>
+                          <td>
+                            <p class="text-center">
+
+                              <h2 class="text-center body-title">YOUR AMBASSADOR CODE:</h2>
+
+                              [[discount_code]]
+
+                            </p>
+
+                            <p class="text-center">
+
+                              <h2 class="text-center body-title">YOUR SHARABLE LINK:</h2>
+
+                              [[affiliate_link]]
+
+                            </p>
+
+                            <p class="text-center">
+
+                              <h2 class="text-center body-title">YOUR AMBASSADOR PROGRAM DASHBOARD:</h2><br />
+
+                              https://apera.refersion.com/affiliate/login
+
+                            </p>
+                          </td>
                         </tr>
 
                           <tr>
