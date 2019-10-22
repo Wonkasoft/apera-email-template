@@ -6,7 +6,7 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>The All New Apera</title>
 
@@ -42,6 +42,12 @@ body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; 
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .ExternalClass {
@@ -2602,6 +2608,48 @@ body.outlook p {
         max-width:250px;
       }
 
+      td.add-top-point {
+        position: relative;
+        text-align: center;
+        padding: 0 15px;
+        border-top: 15px solid #e6e6e6;
+      } 
+
+      td.add-top-point::before {
+        content: "";
+        position: relative;
+        top: 13px;
+        width: 100%;
+        border: 15px solid transparent;
+        border-top-color: #e6e6e6;
+      }
+
+      td.add-top-point h3 {
+        margin: auto;
+      }
+
+      td.add-top-point ul {
+        margin: 30px auto;
+      }
+
+      td.add-top-point li {
+        margin: 0 auto 30px;
+      }
+
+      td.add-top-point li .text-box {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 15px;
+        margin: auto;
+        height: 37px;
+        color: #fff;
+        font-size: 1rem;
+        line-height: 1.1;
+        width: 70%;
+        background: #52abf6;
+      }
+
     </style>
 
   </head>
@@ -2701,12 +2749,12 @@ body.outlook p {
                                         <span class="item-name">Ambassador Guide</span>
                                       </li>
                                       <li>
-                                        <a href="#" class="wonka-btn">Download the Guide</a>
+                                        <a href="https://aperabags.com/wp-content/uploads/2019/10/Apera-Ambassador-Guide.pdf" class="wonka-btn">Download the Guide</a>
                                       </li>
                                     </ul>
                                   </td>
                                   <td>
-                                    <a href="#"><img src="https://multimedia.getresponse.com/getresponse-G8dbp/photos/99164592-cd3b-4263-af63-411c4954a243.png" class="guide" /></a>
+                                    <a href="https://aperabags.com/wp-content/uploads/2019/10/Apera-Ambassador-Guide.pdf"><img src="https://multimedia.getresponse.com/getresponse-G8dbp/photos/99164592-cd3b-4263-af63-411c4954a243.png" class="guide" /></a>
                                   </td>
                                 </tr>
                                 <tr>
@@ -2745,31 +2793,34 @@ body.outlook p {
                           </td>
 
                         </tr>
-                        <tr>
-                          <td>
-                            <p class="text-center">
+                        <tr class="bg-light">
+                          <td class="add-top-point">
+                            <ul>
+                              
+                            <li class="text-center">
 
-                              <h2 class="text-center body-title">YOUR AMBASSADOR CODE:</h2>
+                              <h3 class="text-center body-title">YOUR AMBASSADOR CODE:</h3>
 
-                              [[discount_code]]
+                              <span class="text-box">[[discount_code]]</span>
 
-                            </p>
+                            </li>
 
-                            <p class="text-center">
+                            <li class="text-center">
 
-                              <h2 class="text-center body-title">YOUR SHARABLE LINK:</h2>
+                              <h3 class="text-center body-title">YOUR SHARABLE LINK:</h3>
 
-                              [[affiliate_link]]
+                              <span class="text-box">[[affiliate_link]]</span>
 
-                            </p>
+                            </li>
 
-                            <p class="text-center">
+                            <li class="text-center">
 
-                              <h2 class="text-center body-title">YOUR AMBASSADOR PROGRAM DASHBOARD:</h2><br />
+                              <h3 class="text-center body-title">YOUR AMBASSADOR DASHBOARD:</h3>
 
-                              https://apera.refersion.com/affiliate/login
-
-                            </p>
+                              <span class="text-box">https://apera.refersion.com/affiliate/login</span>
+                              
+                            </li>
+                            </ul>
                           </td>
                         </tr>
 

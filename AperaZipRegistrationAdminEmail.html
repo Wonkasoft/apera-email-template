@@ -1,5 +1,4 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 
   <head>
@@ -42,6 +41,12 @@ body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; 
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .ExternalClass {
@@ -2551,142 +2556,191 @@ body.outlook p {
         max-width: 300px;
       }
 
-    </style>
+      table.checkers {
+        width: 100%;
+      }
 
+      table.checkers tbody td {
+        text-align: center;
+        width: 50%;
+        vertical-align: middle;
+      }
+
+      table.checkers tbody td ul {
+        list-style: none;
+      }
+
+      table.checkers tbody td ul li {
+        margin: 0 auto 30px;
+      }
+
+      table.checkers tbody td ul li a.wonka-btn {
+        display: grid;
+        margin: auto;
+        height: 35px;
+        width: 270px;
+        color: #ffffff;
+        background: #52abf6;
+        border-radius: 100px;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        line-height: 2;
+        box-shadow: 0 1px 4px 0 rgba(0,0,0,.6);
+      }
+
+      table.checkers tbody .badge {
+        display: inline-grid;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        background: #343e47;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-size: 2.8rem;
+        line-height: 1.3;
+      }
+
+      .guide, .stash-img {
+        margin: auto;
+        max-width:250px;
+      }
+
+      td.add-top-point {
+        position: relative;
+        text-align: center;
+        padding: 0 15px;
+        border-top: 15px solid #e6e6e6;
+      } 
+
+      td.add-top-point::before {
+        content: "";
+        position: relative;
+        top: 13px;
+        width: 100%;
+        border: 15px solid transparent;
+        border-top-color: #e6e6e6;
+      }
+
+      td.add-top-point h3 {
+        margin: auto;
+      }
+
+      td.add-top-point ul {
+        margin: 30px auto;
+      }
+
+      td.add-top-point li {
+        margin: 0 auto 30px;
+      }
+
+      td.add-top-point li .text-box {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 15px;
+        margin: auto;
+        height: 37px;
+        color: #fff;
+        font-size: 1rem;
+        line-height: 1.1;
+        width: 70%;
+        background: #52abf6;
+      }
+
+    </style>
   </head>
 
   <body>
-
     <!-- <style> -->
-    <span class="preheader">We’ve received your application!</span><br />
-    
     <table class="body">
-
       <tr>
-
         <td class="float-center" align="center" valign="top">
+          <table align="center" class="container header float-center">
 
-          <center data-parsed="">
+            <tbody>
 
-            <table align="center" class="container header float-center">
+              <tr>
 
-              <tbody>
+                <td>
 
-                <tr>
+                  <table class="row">
 
-                  <td>
+                    <tbody class="top-header" style="background: linear-gradient( 180deg, rgba( 51, 62, 72, 1 ) 25%, rgba( 51, 62, 72, 0 ) 80% ), url('https://aperabags.com/wp-content/uploads/2019/10/email-header-image.jpg');background-position: center center; background-size: cover; padding: 0px;">
 
-                    <table class="row">
+                      <tr>
 
-                      <tbody class="top-header" style="background: linear-gradient( 180deg, rgba( 51, 62, 72, 1 ) 25%, rgba( 51, 62, 72, 0 ) 80% ), url('https://aperabags.com/wp-content/uploads/2019/10/email-header-image.jpg');background-position: center center; background-size: cover; padding: 0px;">
+                        <th>
 
-                        <tr>
+                          <a href="https://aperabags.com/shop/">
 
-                          <th>
+                          <img createnew="true" src="https://aperabags.com/wp-content/uploads/2019/05/long-logo-white.png" class="text-center" /></a>
 
-                            <a href="https://aperabags.com/shop/">
+                        </th>
 
-                            <img createnew="true" src="https://aperabags.com/wp-content/uploads/2019/05/long-logo-white.png" class="text-center" /></a>
+                      </tr>
+                      <tr>
+                        <th class="shop-link">
 
-                          </th>
+                          <a href="https://aperabags.com/wp-admin/"><span>ADMIN</span></a>
 
-                        </tr>
-                        <tr>
-                          <th class="shop-link">
+                        </th>
+                      </tr>
 
-                            <a href="https://aperabags.com/shop/"><span>SHOP</span></a> | <a href="https://aperabags.com/shop/"><span>EARN COMMISSION ON EVERY SALE</span></a>
+                    </tbody>
 
-                          </th>
-                        </tr>
+                  </table>
 
-                      </tbody>
+                </td>
 
-                    </table>
+              </tr>
 
-                  </td>
+            </tbody>
 
-                </tr>
-
-              </tbody>
-
-            </table>
-
+          </table>
             <table align="center" class="container float-center">
-
               <tbody>
-
                 <tr>
-
                   <td>
-
                     <table class="row">
-
                       <tbody>
-
-                        <tr class="body-border">
-
+                        <tr  class="body-border">
                           <td class="text-center">
+                            <h2 class="text-center body-title">New Zip Affiliate Registered</h2>
 
-                            <h2 class="body-title text-center">Hi [[firstname]]!</h2>
+                            <p class="text-left">
+                              <p class="text-left"><strong>Name:</strong></p>
+                              <p class="text-left">{Name (First):1.3} {Name (Last):1.6}</p>
+                            </p>
 
-                            <p class="text-left">Thank you for submitting your Apera Ambassador Program application! We've received it and our team will be getting back to you very soon.</p><br /><br />
+                            <p class="text-left">
+                              <p class="text-left"><strong>Email:</strong></p>
+                              <p class="text-left">{Email:15}</p>
+                            </p>
+                                                        
+                            <p class="text-left">
+                              <p class="text-left"><strong>Phone:</strong></p>
+                              <p class="text-left">{Phone:14}</p>
+                            </p>
 
-                            <p class="text-left">Sincerely,<br>
 
-                            Team Apera<br>
-
-                            "The Best Darn Gym Bags" ™</p>
-
-                          </td>
-
-                        </tr>
-
-                        <tr>
-
-                          <td class="social-area">
-
-                            <p class="text-center">Check us out on social media!</p><br />
-                            <table class="row collapse">
-
-                              <tbody>
-
-                                <tr>
-
-                                  <th class="small-12 large-2 columns first">
-
-                                    <table>
-
-                                      <tr>
-
-                                        <th style="padding: 8px; text-align: center;">
-
-                                          <a style="display: inline-block;" href="https://www.instagram.com/aperabags/"><img createnew="true"  class="social-icons" width="25" height="25" src="https://aperabags.com/wp-content/uploads/2019/08/Instagram-icon-small.png"></a>
-
-                                          <a style="display: inline-block;" href="https://www.facebook.com/aperabags/"><img createnew="true"  class="social-icons" width="25" height="25" src="https://aperabags.com/wp-content/uploads/2019/08/facebook-icon-small.png"></a>
-
-                                          <a style="display: inline-block;" href="https://twitter.com/aperabags/"><img createnew="true"  class="social-icons" width="25" height="25" src="https://aperabags.com/wp-content/uploads/2019/08/twitter-icon-small.png"></a>
-
-                                          <a style="display: inline-block;" href="https://www.pinterest.com/aperabags/"><img createnew="true"  class="social-icons" width="25" height="25" src="https://aperabags.com/wp-content/uploads/2019/08/pinterest-icon-small.png"></a>
-
-                                        </th>
-
-                                      </tr>
-
-                                    </table>
-
-                                  </th>
-
-                                </tr>
-
-                              </tbody>
-
+                        </td>
+                      </tr>
+                      <tr class="bg-light">
+                        <td>
+                            <p class="text-center">
+                              <strong>To create affiliate discount code for {Name (First):1.3}, please click the button below:</strong>
+                            </p>
+                            <table class="button expanded rounded text-center">
+                              <tr>
+                                <td class="text-center"><a class="wonka-btn" href="https://aperabags.com/add-discount-code/?email={Email:15}">Create Discount Code</a>
+                                </td>
+                              </tr>
                             </table>
-
-                          </td>
-
-                        </tr>
-
-                      </tbody>
+                        </td>
+                      </tr>
+                  </tbody>
 
                       <tfoot style="background: #333e48;">
 
@@ -2711,8 +2765,6 @@ body.outlook p {
               </tbody>
 
             </table>
-
-          </center>
 
         </td>
 
