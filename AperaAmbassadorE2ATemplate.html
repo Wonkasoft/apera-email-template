@@ -1500,9 +1500,9 @@ td,
 
 th {
 
-  font-size: 16px;
+  font-size: 1.1rem;
 
-  line-height: 1.3; }
+  line-height: 1.7; }
 
 p {
 
@@ -1718,14 +1718,22 @@ table.button {
     display: flex;
     margin: auto;
     padding: 8px;
-    width: 270px;
+    height: 58px;
+    max-width: 50%;
     color: #ffffff;
     background: #52abf6;
     border-radius: 100px;
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    box-shadow: 0 1px 4px 0 rgba(0,0,0,.6);
+    font-weight: bold;
+    font-size: 1.3rem;
+    box-shadow: 0 1px 32px 0 rgba(0,0,0,.16);
+  }
+
+  table.button.expanded td a.wonka-btn span {
+      position: relative;
+      top: 2px;
   }
 
 table.button:hover table tr td a,
@@ -2419,14 +2427,13 @@ body.outlook p {
       }
 
       .body-border > td .body-title {
-        margin: 30px auto;
+        margin: 30px 6%;
       }
 
       .body-border > td::before {
           content: "";
           position: relative;
-          top: 13px;
-          width: 100%;
+          display: inline-block;
           border: 15px solid transparent;
           border-top-color: #52abf6;
       }
@@ -2434,8 +2441,8 @@ body.outlook p {
       .body-border > td::after {
           content: "";
           position: relative;
-          bottom: -30px;
-          width: 100%;
+          display: inline-block;
+          bottom: -40px;
           border: 15px solid transparent;
           border-top-color: #e6e6e6;
       }
@@ -2464,7 +2471,7 @@ body.outlook p {
       }
 
       .bg-apera-logo > td {
-        background: rgba( 250, 250, 250, .85 );
+        background: rgba( 250, 250, 250, .9 );
         padding: 30px 15px 0;
       }
 
@@ -2519,12 +2526,12 @@ body.outlook p {
       }
 
       .difference-table td ul {
-        padding: 0 8px;
+        padding: 0;
         list-style: none;
       }
 
       .difference-table td ul li {
-        margin: 8px;
+        margin-bottom: 22px;
       }
 
       .difference-table td ul li::before  {
@@ -2534,11 +2541,11 @@ body.outlook p {
       }
 
       .difference-table .refersion-side {
-        background: rgba( 240, 240, 240, .5 );
+        background: rgba( 0, 0, 0, .03 );
       }
 
       .difference-table .apera-side {
-        background: rgba( 220, 220, 220, .5 );
+        background: rgba( 0, 0, 0, .07 );
       }
 
       .difference-table img {
@@ -2566,7 +2573,6 @@ body.outlook p {
 
         <td class="float-center" align="center" valign="top">
 
-          <center data-parsed="">
 
             <table align="center" class="container header float-center">
 
@@ -2627,12 +2633,11 @@ body.outlook p {
 
                           <td class="text-center">
 
-                            <h2 class="body-title text-center">Hi [[firstname]]!<br />
+                            <h2 class="body-title text-center">Hi, [[firstname]]!<br />
                             Welcome to the Apera Ambassador Program!</h2>
 
                             <p class="text-left">
-                              <img src="https://aperabags.com/wp-content/uploads/2019/08/karin-headshot-small.jpg" class="coordinator-image float-left margin-right" />We are so happy to have you join our community of amazing fitness enthusiasts across the country. As a member of the team, we encourage you to keep reaching your
-                              goals and continue to inspire others to achieve their goals along the way! My name is Karin, the Community Coordinator at Apera. You can see me as your go-to person for ambassador updates and any questions regarding the program. So...</p>
+                              We are so happy to have you join our community of amazing fitness enthusiasts across the country. As a member of the team, we encourage you to keep reaching your goals and continue to inspire others to achieve their goals along the way! My name is Karin, the Community Coordinator at Apera. You can see me as your go-to person for ambassador updates and any questions regarding the program. So...</p>
 
                           </td>
 
@@ -2640,14 +2645,16 @@ body.outlook p {
 
                         <tr class="bg-light bg-apera-logo">
                           <td class="text-center">
-                            <h3 class="body-title text-center title-underline">So… let’s get started!</h3>
-                            <p class="text-left">Please click the link below to complete filling out your profile on our referral program portal: Referison!</p>
+                            <h3 class="body-title text-center title-underline">Let’s get started!</h3>
+                            <p class="text-left">Please click the link below to complete filling out your profile on our referral program portal: <a href="https://apera.refersion.com/affiliate/login"><strong>Referison!</strong></a></p>
 
                             <table class="button expanded rounded text-center">
 
                               <tr>
 
-                                <td class="text-center"><a class="wonka-btn" href="https://aperabags.com/ambassador-registration">Complete Registration</a>
+                                <td class="text-center">
+
+                                  <a class="wonka-btn" href="https://aperabags.com/ambassador-registration"><span>Complete Profile</span></a>
 
                                 </td>
 
@@ -2657,23 +2664,23 @@ body.outlook p {
 
                             <p class="text-left">Once your Referison profile is set up, you will receive your unique ambassador promo code and shareable link. Your audience will be able to use your promo code to receive a discount on their Apera bags and allow you to earn commission on their purchases!</p>
 
-                            <h3 class="body-title text-center">What’s the difference between my Refersion account and my Apera account?</h3>
+                            <h3 class="body-title text-center">What’s the Difference Between my Refersion Account and my Apera Account?</h3>
 
-                            <p class="text-left">Your <a href="https://apera.refersion.com/affiliate/login">Refersion account</a> and your <a href="https://aperabags.com/my-account/">Apera account</a> are two separate accounts. Your Refersion account is your portal to track your sales, what Apera products your audience is buying, and manage the commission you’ve earned. Your Apera account is where you can go to purchase your own Apera gear and track your Apera orders.</p>
+                            <p class="text-left">Your Refersion account and your Apera account are two separate accounts. <a href="https://apera.refersion.com/affiliate/login"><strong>Your Refersion account</strong></a>  is your portal to track your sales, what Apera products your audience is buying, and manage the commission you’ve earned. <a href="https://aperabags.com/my-account/"><strong>Your Apera account</strong></a> is where you can go to purchase your own Apera gear and track your Apera orders.</p>
 
                             <table class="row difference-table">
                               <tr>
                                 <td class="refersion-side">
-                                  <a href="https://apera.refersion.com/affiliate/login"><img src="https://multimedia.getresponse.com/getresponse-G8dbp/photos/a5488b21-fbed-44fe-b68f-1258af28908f.png" class="refersion-logo" /></a>
+                                  <a href="https://apera.refersion.com/affiliate/login"><img src="https://multimedia.getresponse.com/getresponse-G8dbp/photos/bf146003-2e0c-4496-b77d-9158190f9ccd.png" class="refersion-logo" /></a>
                                   <ul>
                                     <li>
-                                      <span>Track sales that have been made with your promo code/unique URL</span>
+                                      <span>Track sales that have been made with your promo code/unique URL.</span>
                                     </li>
                                     <li>
-                                      <span>See what products your audience is buying</span>
+                                      <span>See what products your audience is buying.</span>
                                     </li>
                                     <li>
-                                      <span>Manage the commission you’ve earned</span>
+                                      <span>Manage the commission you’ve earned.</span>
                                     </li>
                                   </ul>
                                 </td>
@@ -2681,10 +2688,13 @@ body.outlook p {
                                   <a href="https://aperabags.com/my-account/"><img src="https://multimedia.getresponse.com/getresponse-G8dbp/photos/5cd7083b-95ce-4b97-b6dc-42f28807e6a9.png" class="refersion-logo" /></a>
                                   <ul>
                                     <li>
-                                      <span>Purchase your own Apera gear</span>
+                                      <span>Purchase your own Apera gear.</span>
                                     </li>
                                     <li>
-                                      <span>Track your Apera orders</span>
+                                      <span>Track your Apera orders.</span>
+                                    </li>
+                                    <li>
+                                      <span>Get exclusive perks and discounts.</span>
                                     </li>
                                   </ul>
                                 </td>
@@ -2698,7 +2708,7 @@ body.outlook p {
 
                             <p class="text-left">Sincerely,<br />
 
-                              <img src="https://aperabags.com/wp-content/uploads/2019/08/karin-headshot-small.jpg" class="coordinator-image" /><br />
+                              <img src="https://multimedia.getresponse.com/getresponse-G8dbp/photos/ed2efa38-3caf-4d04-8196-cff9d14e4d61.png" class="coordinator-image" />
 
                             Karin, Community Coordinator<br />
 
@@ -2818,8 +2828,6 @@ body.outlook p {
               </tbody>
 
             </table>
-
-          </center>
 
         </td>
 

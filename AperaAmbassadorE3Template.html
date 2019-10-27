@@ -1506,9 +1506,9 @@ td,
 
 th {
 
-  font-size: 16px;
+  font-size: 1.1rem;
 
-  line-height: 1.3; }
+  line-height: 1.7; }
 
 p {
 
@@ -1731,7 +1731,13 @@ table.button {
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
+    font-size: 1.3rem;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,.6);
+  }
+
+  table.button.expanded td a.wonka-btn span {
+      position: relative;
+      top: 2px;
   }
 
 table.button:hover table tr td a,
@@ -2431,8 +2437,7 @@ body.outlook p {
       .body-border > td::before {
           content: "";
           position: relative;
-          top: 13px;
-          width: 100%;
+          display: inline-block;
           border: 15px solid transparent;
           border-top-color: #52abf6;
       }
@@ -2440,8 +2445,8 @@ body.outlook p {
       .body-border > td::after {
           content: "";
           position: relative;
+          display: inline-block;
           bottom: -30px;
-          width: 100%;
           border: 15px solid transparent;
           border-top-color: #e6e6e6;
       }
@@ -2618,8 +2623,7 @@ body.outlook p {
       td.add-top-point::before {
         content: "";
         position: relative;
-        top: 13px;
-        width: 100%;
+        display: inline-block;
         border: 15px solid transparent;
         border-top-color: #e6e6e6;
       }
@@ -2693,7 +2697,7 @@ body.outlook p {
 
                             <a href="https://aperabags.com/shop/"><span>SHOP</span></a> | <a href="https://aperabags.com/shop/">
 
-                              <span>FREE CUSTOM LOGOS</span>
+                              <span>EARN COMMISSION ON EVERY SALE</span>
 
                             </a>
 
@@ -2728,7 +2732,7 @@ body.outlook p {
 
                           <td class="text-center">
 
-                            <h2 class="text-center body-title">Hi [[firstname]]!</h2>
+                            <h2 class="text-center body-title">Hi, [[firstname]]!</h2>
 
                             <p class="text-left">We know you have what it takes to be a badass ambassador and start earning a commission on the sales you generate! In order to do this, we are giving you some resources so you can be successful!
                             </p>
@@ -2749,7 +2753,7 @@ body.outlook p {
                                         <span class="item-name">Ambassador Guide</span>
                                       </li>
                                       <li>
-                                        <a href="https://aperabags.com/wp-content/uploads/2019/10/Apera-Ambassador-Guide.pdf" class="wonka-btn">Download the Guide</a>
+                                        <a href="https://aperabags.com/wp-content/uploads/2019/10/Apera-Ambassador-Guide.pdf" class="wonka-btn"><span>Download the Guide</span></a>
                                       </li>
                                     </ul>
                                   </td>
@@ -2770,7 +2774,7 @@ body.outlook p {
                                         <span class="item-name">Photo Stash</span>
                                       </li>
                                       <li>
-                                        <a href="https://www.dropbox.com/sh/jth5toljj993fnu/AAC5ZzahssRwtkMajqHs1ck_a?dl=0" class="wonka-btn">Get Social Content</a>
+                                        <a href="https://www.dropbox.com/sh/jth5toljj993fnu/AAC5ZzahssRwtkMajqHs1ck_a?dl=0" class="wonka-btn"><span>Get Social Content</span></a>
                                       </li>
                                     </ul>
                                   </td>
@@ -2784,11 +2788,13 @@ body.outlook p {
 
                             <p class="text-left">Sincerely,<br />
 
-                            <img src="https://aperabags.com/wp-content/uploads/2019/08/karin-headshot-small.jpg" class="coordinator-image" /><br />
+                            <img src="https://multimedia.getresponse.com/getresponse-G8dbp/photos/ed2efa38-3caf-4d04-8196-cff9d14e4d61.png" class="coordinator-image" /><br />
 
                             Karin, Community Coordinator<br />
 
                             "The Best Darn Gym Bags" ™</p>
+
+                            <p class="text-left">PS - Don’t forget to use and promote your code ;)</p>
 
                           </td>
 

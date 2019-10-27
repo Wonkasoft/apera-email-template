@@ -1500,9 +1500,9 @@ td,
 
 th {
 
-  font-size: 16px;
+  font-size: 1.1rem;
 
-  line-height: 1.3; }
+  line-height: 1.7; }
 
 p {
 
@@ -1718,14 +1718,22 @@ table.button {
     display: flex;
     margin: auto;
     padding: 8px;
-    width: 270px;
+    height: 58px;
+    max-width: 50%;
     color: #ffffff;
     background: #52abf6;
     border-radius: 100px;
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    box-shadow: 0 1px 4px 0 rgba(0,0,0,.6);
+    font-weight: bold;
+    font-size: 1.3rem;
+    box-shadow: 0 1px 32px 0 rgba(0,0,0,.16);
+  }
+
+  table.button.expanded td a.wonka-btn span {
+      position: relative;
+      top: 2px;
   }
 
 table.button:hover table tr td a,
@@ -2419,14 +2427,13 @@ body.outlook p {
       }
 
       .body-border > td .body-title {
-        margin: 30px auto;
+        margin: 30px 6%;
       }
 
       .body-border > td::before {
           content: "";
           position: relative;
-          top: 13px;
-          width: 100%;
+          display: inline-block;
           border: 15px solid transparent;
           border-top-color: #52abf6;
       }
@@ -2434,8 +2441,8 @@ body.outlook p {
       .body-border > td::after {
           content: "";
           position: relative;
+          display: inline-block;
           bottom: -30px;
-          width: 100%;
           border: 15px solid transparent;
           border-top-color: #e6e6e6;
       }
@@ -2464,7 +2471,7 @@ body.outlook p {
       }
 
       .bg-apera-logo > td {
-        background: rgba( 250, 250, 250, .85 );
+        background: rgba( 250, 250, 250, .9 );
         padding: 30px 15px 0;
       }
 
@@ -2519,12 +2526,12 @@ body.outlook p {
       }
 
       .difference-table td ul {
-        padding: 0 8px;
+        padding: 0;
         list-style: none;
       }
 
       .difference-table td ul li {
-        margin: 8px;
+        margin-bottom: 22px;
       }
 
       .difference-table td ul li::before  {
@@ -2534,11 +2541,11 @@ body.outlook p {
       }
 
       .difference-table .refersion-side {
-        background: rgba( 240, 240, 240, .5 );
+        background: rgba( 0, 0, 0, .03 );
       }
 
       .difference-table .apera-side {
-        background: rgba( 220, 220, 220, .5 );
+        background: rgba( 0, 0, 0, .07 );
       }
 
       .difference-table img {
@@ -2592,7 +2599,7 @@ body.outlook p {
                         <tr>
                           <th class="shop-link">
 
-                            <a href="https://aperabags.com/shop/"><span>SHOP</span></a> | <a href="https://aperabags.com/shop/"><span>EARN COMMISSION ON EVERY SALE</span></a>
+                            <a href="https://aperabags.com/shop/"><span>SHOP</span></a> | <a href="https://aperabags.com/shop/"><span>EARN $10</span></a>
 
                           </th>
                         </tr>
@@ -2627,14 +2634,33 @@ body.outlook p {
 
                             <h2 class="body-title text-center">[[firstname]],</h2>
 
-                            <p class="text-left">Unfortunately we did not approve your application to join the Apera Ambassador Program. Please do not get discouraged! We encourage you to keep growing your social media presence and continue to inspire others to achieve their fitness and health goals along the way! Feel free to apply again in a couple months. Thank you for your submission and we wish you the best of luck.</p>
+                            <p class="text-left">Unfortunately we did not approve your application to join the Apera Ambassador Program. Please do not get discouraged! We encourage you to keep growing your social media presence and continue to inspire others to achieve their fitness and health goals along the way! Feel free to apply again in a couple months.</p>
 
                           </td>
 
                         </tr>
                         <tr class="bg-light">
                           <td>
-                            <p class="text-left">Feel free to apply again in a couple months. Thank you for your submission and we wish you the best of luck.</p>
+                            <h3 class="body-title text-center">Not An Ambassador Yet? <br />
+                            JOIN THE PERKS PROGRAM!!!</h3>
+
+                            <p class="text-left">In the meantime, please consider joining the Apera Perks Program! Signing up is totally FREE and you will immediately receive $10 in AperaCash!!! You can earn more AperaCash in lots of ways: by liking us on Facebook, following us on Instagram, sharing the Perks Program with your family and friends, and more!</p>
+
+                            <table class="button expanded rounded text-center">
+
+                              <tr>
+
+                                <td class="text-center">
+
+                                  <a class="wonka-btn" href="https://aperabags.com/perks/"><span>Get my $10 Aperacash!</span></a>
+
+                                </td>
+
+                              </tr>
+
+                            </table>
+
+                            <p class="text-left">Thank you for your submission and we hope to see you a part of the Apera Perks Program soon!</p>
 
                             <p class="text-left">
 
