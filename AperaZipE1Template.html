@@ -141,6 +141,14 @@ table, tr, td {
 
   text-align: left; }
 
+tbody.top-header {
+  background: linear-gradient( 180deg, rgba( 51, 62, 72, 1 ) 25%, rgba( 51, 62, 72, 0 ) 80% ), url('https://aperabags.com/wp-content/uploads/2019/10/email-header-image.jpg');
+  background-position: center center; 
+  background-size: cover; 
+  background-repeat: no-repeat;
+  padding: 0px;
+}
+
 tbody.top-header th {
 
   width: 100%;
@@ -2425,19 +2433,9 @@ body.outlook p {
       .body-border > td::before {
           content: "";
           position: relative;
-          top: 13px;
-          width: 100%;
+          display: inline-block;
           border: 15px solid transparent;
           border-top-color: #52abf6;
-      }
-
-      .body-border > td::after {
-          content: "";
-          position: relative;
-          bottom: -30px;
-          width: 100%;
-          border: 15px solid transparent;
-          border-top-color: #e6e6e6;
       }
 
       .body-border > td p {
@@ -2551,6 +2549,52 @@ body.outlook p {
         max-width: 300px;
       }
 
+      td.add-top-point {
+        position: relative;
+        text-align: center;
+        padding: 0 15px;
+        border-top: 15px solid #e6e6e6;
+      } 
+
+      td.add-top-point::before {
+        content: "";
+        position: relative;
+        top: 13px;
+        width: 100%;
+        border: 15px solid transparent;
+        border-top-color: #e6e6e6;
+      }
+
+      td.add-top-point h3 {
+        margin: auto auto 30px;
+      }
+
+      td.add-top-point ul {
+        margin: 30px auto;
+      }
+
+      td.add-top-point li {
+        margin: 0 auto 30px;
+      }
+
+      td.add-top-point li .text-box {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 15px;
+        margin: auto;
+        height: 37px;
+        color: #fff;
+        font-size: 1rem;
+        line-height: 1.1;
+        width: 70%;
+        background: #52abf6;
+      }
+
+      td.add-top-point li .text-box a, td.add-top-point li .text-box a {
+        color: #fff;
+      }
+
     </style>
 
   </head>
@@ -2566,8 +2610,6 @@ body.outlook p {
 
         <td class="float-center" align="center" valign="top">
 
-          <center data-parsed="">
-
             <table align="center" class="container header float-center">
 
               <tbody>
@@ -2578,13 +2620,13 @@ body.outlook p {
 
                     <table class="row">
 
-                      <tbody class="top-header" style="background: linear-gradient( 180deg, rgba( 51, 62, 72, 1 ) 25%, rgba( 51, 62, 72, 0 ) 80% ), url('https://aperabags.com/wp-content/uploads/2019/10/email-header-image.jpg'); background-position: center center; background-size: cover; padding: 0px;">
+                      <tbody class="top-header">
 
                         <tr>
 
                           <th>
 
-                            <a href="https://aperabags.com/shop/">
+                            <a href="https://aperabags.com/">
 
                             <img createnew="true" src="https://aperabags.com/wp-content/uploads/2019/05/long-logo-white.png" class="text-center" /></a>
 
@@ -2633,7 +2675,7 @@ body.outlook p {
 
                           <td class="text-center">
 
-                            <h2 class="text-center body-title">Hi [[clubgymname]]!</h2>
+                            <h2 class="text-center body-title">Hi, [[clubgymname]]!</h2>
 
                             <p class="text-left">Thank you for submitting your Apera Zip Program application! We've received it and our team will be getting back to you very soon.</p><br /><br />
 
@@ -2649,7 +2691,7 @@ body.outlook p {
 
                         <tr>
 
-                          <td class="social-area">
+                          <td class="social-area add-top-point">
 
                             <p class="text-center">Check us out on social media!</p><br />
                             <table class="row collapse">
@@ -2717,8 +2759,6 @@ body.outlook p {
               </tbody>
 
             </table>
-
-          </center>
 
         </td>
 

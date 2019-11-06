@@ -1,4 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 
   <head>
@@ -1513,9 +1514,9 @@ td,
 
 th {
 
-  font-size: 16px;
+  font-size: 1.1rem;
 
-  line-height: 1.3; }
+  line-height: 1.7; }
 
 p {
 
@@ -1738,12 +1739,13 @@ table.button {
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
+    font-size: 1.3rem;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,.6);
   }
 
   table.button.expanded td a.wonka-btn span {
-    position: relative;
-    top: 2px;
+      position: relative;
+      top: 2px;
   }
 
 table.button:hover table tr td a,
@@ -2452,7 +2454,7 @@ body.outlook p {
         margin: 0 0 30px;
       }
 
-      .bg-light > td {
+      .bg-light > td, .bg-transparent > td {
         padding: 30px 15px;
       }
 
@@ -2460,7 +2462,7 @@ body.outlook p {
         margin: 0;
       }
 
-      .bg-light > td p:not( :last-child ) {
+      .bg-light > td p:not( :last-child ), .bg-transparent > td p:not( :last-child ) {
         margin: 0 auto 30px;
       }
 
@@ -2514,6 +2516,7 @@ body.outlook p {
       .title-underline {
         display: inline-block;
         border-bottom: 8px solid #52abf6;
+        margin-bottom: 8px;
       }
 
       table.difference-table {
@@ -2588,7 +2591,7 @@ body.outlook p {
         align-items: center;
         justify-content: center;
         text-transform: uppercase;
-        line-height: 2;
+        line-height: 1.5;
         box-shadow: 0 1px 4px 0 rgba(0,0,0,.6);
       }
 
@@ -2610,15 +2613,84 @@ body.outlook p {
         line-height: 1.3;
       }
 
+      table.steps {
+        width: 100%;
+        margin: 0 auto 30px;
+      }
+
+      table.steps tbody td {
+        text-align: center;
+        padding: 8px;
+        vertical-align: top;
+      }
+
+      table.steps tbody td h5 {
+        margin-bottom: 0;
+        font-weight: bold;
+      }
+
+      table.steps tbody td ul {
+        list-style: none;
+      }
+
+      table.steps tbody td ul li {
+        margin: 0 auto 30px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+
+      table.steps tbody td ul li div {
+        padding: 20px 15px 0;
+      }
+
+      table.steps tbody td ul li a.wonka-btn {
+        display: grid;
+        margin: auto;
+        height: 35px;
+        width: 270px;
+        color: #ffffff;
+        background: #52abf6;
+        border-radius: 100px;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        line-height: 1.5;
+        box-shadow: 0 1px 4px 0 rgba(0,0,0,.6);
+      }
+
+      table.steps tbody td ul li a.wonka-btn span {
+        position: relative;
+        top: 2px;
+      }
+
+      table.steps tbody .badge {
+        display: inline-grid;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        background: #343e47;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-size: 2.8rem;
+        line-height: 1.3;
+      }
+
       .guide, .stash-img {
         margin: auto;
         max-width:250px;
       }
 
+      .step-icon {
+        width:100%;
+        max-width: 60px;
+      }
+
       td.add-top-point {
         position: relative;
         text-align: center;
-        padding: 0 15px;
+        padding: 0 15px 30px;
         border-top: 15px solid #e6e6e6;
       } 
 
@@ -2635,7 +2707,7 @@ body.outlook p {
       }
 
       td.add-top-point ul {
-        margin: 30px auto;
+        margin: 0 auto;
       }
 
       td.add-top-point li {
@@ -2660,111 +2732,299 @@ body.outlook p {
         color: #fff;
       }
 
+      .pm-0 {
+        margin-bottom: 0 !important;
+      }
+
+      .insta-aperacash {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 4rem;
+      }
+
+      td.perks-links h3 {
+        margin: auto;
+      }
+
+      td.perks-links ul {
+        margin: 30px auto 60px;
+      }
+
+      td.perks-links li {
+        margin: 0 auto 30px;
+      }
+
+      td.perks-links li .text-box {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 15px;
+        margin: auto;
+        height: 37px;
+        color: #fff;
+        font-size: 1rem;
+        line-height: 1.1;
+        width: 70%;
+        background: #52abf6;
+      }
+
+      td.perks-links li .text-box a, td.perks-links li .text-box a:visited {
+        color: #fff;
+      }
+
+      td.add-top-point {
+        position: relative;
+        text-align: center;
+        padding: 0 15px 30px;
+        border-top: 15px solid #e6e6e6;
+      } 
+
+      td.add-top-point::before {
+        content: "";
+        position: relative;
+        display: inline-block;
+        border: 15px solid transparent;
+        border-top-color: #e6e6e6;
+      }
+
+      td.add-top-point h3 {
+        margin: auto auto 30px;
+      }
+
+      td.add-top-point ul {
+        margin: 30px auto;
+      }
+
+      td.add-top-point li {
+        margin: 0 auto 30px;
+      }
+
+      td.add-top-point li .text-box {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 15px;
+        margin: auto;
+        height: 37px;
+        color: #fff;
+        font-size: 1rem;
+        line-height: 1.1;
+        width: 70%;
+        background: #52abf6;
+      }
+
     </style>
+
   </head>
 
   <body>
+
     <!-- <style> -->
+    <span class="preheader">We’ve got some exciting news for you… Pause that workout and check out this email.</span><br />
+    
     <table class="body">
+
       <tr>
+
         <td class="float-center" align="center" valign="top">
-          <table align="center" class="container header float-center">
 
-            <tbody>
+            <table align="center" class="container header float-center">
 
-              <tr>
-
-                <td>
-
-                  <table class="row">
-
-                    <tbody class="top-header">
-
-                      <tr>
-
-                        <th>
-
-                          <a href="https://aperabags.com/shop/">
-
-                          <img createnew="true" src="https://aperabags.com/wp-content/uploads/2019/05/long-logo-white.png" class="text-center" /></a>
-
-                        </th>
-
-                      </tr>
-                      <tr>
-                        <th class="shop-link">
-
-                          <a href="https://aperabags.com/wp-admin/"><span>ADMIN</span></a>
-
-                        </th>
-                      </tr>
-
-                    </tbody>
-
-                  </table>
-
-                </td>
-
-              </tr>
-
-            </tbody>
-
-          </table>
-            <table align="center" class="container float-center">
               <tbody>
+
                 <tr>
+
                   <td>
+
                     <table class="row">
+
+                      <tbody class="top-header">
+
+                        <tr>
+
+                          <th>
+
+                            <a href="https://aperabags.com/">
+
+                            <img createnew="true" src="https://aperabags.com/wp-content/uploads/2019/05/long-logo-white.png" class="text-center" /></a>
+
+                          </th>
+
+                        </tr>
+                        <tr>
+                          <th class="shop-link">
+
+                            <a href="https://aperabags.com/shop/"><span>SHOP</span></a> | <a href="https://aperabags.com/shop/">
+
+                              <span>FREE 2-DAY SHIPPING</span>
+
+                            </a>
+
+                          </th>
+                        </tr>
+
+                      </tbody>
+
+                    </table>
+
+                  </td>
+
+                </tr>
+
+              </tbody>
+
+            </table>
+
+            <table align="center" class="container float-center">
+
+              <tbody>
+
+                <tr>
+
+                  <td>
+
+                    <table class="row">
+
                       <tbody>
-                        <tr  class="body-border">
+
+                        <tr class="body-border">
+
                           <td class="text-center">
-                            <h2 class="text-center body-title">New Zip Affiliate Registered</h2>
 
-                            <p class="text-left">
-                              <p class="text-left"><strong>Name:</strong></p>
-                              <p class="text-left">{Name (First):1.3} {Name (Last):1.6}</p>
-                            </p>
+                            <h2 class="text-center body-title">Hi, [[name]]!</h2>
 
-                            <p class="text-left">
-                              <p class="text-left"><strong>Email:</strong></p>
-                              <p class="text-left">{Email:15}</p>
-                            </p>
-                                                        
-                            <p class="text-left">
-                              <p class="text-left"><strong>Phone:</strong></p>
-                              <p class="text-left">{Phone:14}</p>
-                            </p>
+                            <p class="text-left">Pause that workout and take a water break to read this quick email!</p>
 
-                        </td>
-                      </tr>
-                      <tr class="bg-light">
-                        <td>
-                            <p class="text-center">
-                              <strong>To create affiliate discount code for {Name (First):1.3}, please click the button below:</strong>
-                            </p>
-                            <table class="button expanded rounded text-center">
+                            <p class="text-left">YOU are an intrical part of the Apera community and YOU are the reason we are so passionate about making gyms bags. Because of this, we want to make it super easy for you to get the most out of your Perks Program. Don’t forget there are 3 easy ways for you to start earning AperaCash today:</p>
 
-                              <tr>
-                                <td class="text-center"><a class="wonka-btn" href="https://aperabags.com/add-discount-code/?email={Email:15}&tag=zip_discount_code_created&fname={Name (First):1.3}&lname={Name (Last):1.6}&mustbe=97468f1980416a4376b44e701d25f24b"><span>Create Discount Code</span></a>
-                                </td>
-                              </tr>
+                          </td>
+                        </tr>
+                        <tr class="bg-light">
+                          <td class="text-center add-top-point">
 
+                            <table class="table steps">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <ul>
+                                      <li>
+                                        <img src="https://multimedia.getresponse.com/getresponse-G8dbp/photos/717a5251-5a02-44b0-8a85-633d6e162380.png" class="step-icon" />
+                                        <div>
+                                          <h5 class="step-title">1. Refer Friends & Family:</h5>
+                                          <p class="text-left">
+                                          Earn $5 AperaCash per friend who registers through your shareable link for the Apera Perks Program and makes a purchase!</p>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <img src="https://multimedia.getresponse.com/getresponse-G8dbp/photos/8f45ff8f-7b69-4a6c-a0e1-79a81634f10d.png" class="step-icon" />
+                                        <div>
+                                          <h5 class="step-title">2. Shop & Earn:</h5>
+                                          <p class="text-left">Earn $1 of AperaCash for every $10 you spend.</p>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <img src="https://multimedia.getresponse.com/getresponse-G8dbp/photos/3f53e8db-30d7-4bee-ad8e-72de3d4a7e40.png" class=" step-icon" />
+                                        <div>
+                                          <h5 class="step-title">3. Follow & Like:</h5>
+                                          <p class="text-left">Earn $5 AperaCash by following us on Instagram & Liking us on Facebook.</p>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                  </td>
+                                </tr>
+                              </tbody>
                             </table>
 
-                            <p class="text-center">
-                              <strong>After setting this affiliates discount code above, please click the button below to complete their refersion account setup:</strong>
+                            <p class="text-left">
+                              Remember, you can earn,save up,& stack up your AperaCash to apply larger amounts to a purchase!
                             </p>
-                            <table class="button expanded rounded text-center">
 
-                              <tr>
-                                <td class="text-center"><a class="wonka-btn" href="https://www.refersion.com/base/login"><span>Refersion Admin Login</span></a>
-                                </td>
-                              </tr>
+                          </td>
+                        </tr>
+                        <tr class="bg-transparent">
+                          <td class="text-center">
 
-                            </table>
-                        </td>
-                      </tr>
-                  </tbody>
+                            <p class="text-left">Now get back to your workout! We will be in touch with you VERY SOON to share exclusive Perks Program sales with you and other exciting community news!</p>
+
+                            <p class="text-left">
+                            Sincerely,</p>
+
+                            <p class="text-left">
+                            The Apera Perks Program Team<br>
+                            "The Best Darn Gym Bags" ™</p>
+                            
+                          </td>
+                        </tr>
+                        <tr class="bg-light">
+                          <td class="add-top-point">
+                            <ul>
+
+                            <li class="text-center">
+
+                              <h3 class="text-center body-title">YOUR SHARABLE LINK:</h3>
+
+                              <span class="text-box">[[affiliate_link]]</span>
+
+                            </li>
+
+                            <li class="text-center">
+
+                              <h3 class="text-center body-title">YOUR PERKS PROGRAM DASHBOARD:</h3>
+
+                              <span class="text-box"><a href="https://aperabags.com/my-account/">https://aperabags.com/my-account/</a></span>
+                              
+                            </li>
+                            </ul>
+                          </td>
+                        </tr>
+
+                          <tr>
+
+                            <td class="social-area">
+
+                              <p class="text-center">Follow and tag us on social media! #AperaBags</p><br />
+                              <table class="row collapse">
+
+                                <tbody>
+
+                                  <tr>
+
+                                    <th class="small-12 large-2 columns first">
+
+                                      <table>
+
+                                        <tr>
+
+                                          <th style="padding: 8px; text-align: center;">
+
+                                            <a style="display: inline-block;" href="https://www.instagram.com/aperabags/"><img createnew="true"  class="social-icons" width="25" height="25" src="https://aperabags.com/wp-content/uploads/2019/08/Instagram-icon-small.png"></a>
+
+                                            <a style="display: inline-block;" href="https://www.facebook.com/aperabags/"><img createnew="true"  class="social-icons" width="25" height="25" src="https://aperabags.com/wp-content/uploads/2019/08/facebook-icon-small.png"></a>
+
+                                            <a style="display: inline-block;" href="https://twitter.com/aperabags/"><img createnew="true"  class="social-icons" width="25" height="25" src="https://aperabags.com/wp-content/uploads/2019/08/twitter-icon-small.png"></a>
+
+                                            <a style="display: inline-block;" href="https://www.pinterest.com/aperabags/"><img createnew="true"  class="social-icons" width="25" height="25" src="https://aperabags.com/wp-content/uploads/2019/08/pinterest-icon-small.png"></a>
+
+                                          </th>
+
+                                        </tr>
+
+                                      </table>
+
+                                    </th>
+
+                                  </tr>
+
+                                </tbody>
+
+                              </table>
+
+                            </td>
+
+                          </tr>
+
+                        </tbody>
 
                       <tfoot style="background: #333e48;">
 

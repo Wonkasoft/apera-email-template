@@ -146,16 +146,19 @@ table, tr, td {
 
   text-align: left; }
 
+tbody.top-header {
+  background: linear-gradient( 180deg, rgba( 51, 62, 72, 1 ) 25%, rgba( 51, 62, 72, 0 ) 80% ), url('https://aperabags.com/wp-content/uploads/2019/10/email-header-image.jpg');
+  background-position: center center; 
+  background-size: cover; 
+  background-repeat: no-repeat;
+  padding: 0px;
+}
+
 tbody.top-header th {
-
   width: 100%;
-
   padding: 15px 15px 0;
-
   color: #ffffff;
-
   vertical-align: middle;
-
 }
 
 tbody.top-header th.shop-link {
@@ -2427,22 +2430,12 @@ body.outlook p {
         margin: 30px auto;
       }
 
-      .body-border > td::before {
+      .body-border > td:before {
           content: "";
           position: relative;
-          top: 13px;
-          width: 100%;
+          display: inline-block;
           border: 15px solid transparent;
           border-top-color: #52abf6;
-      }
-
-      .body-border > td::after {
-          content: "";
-          position: relative;
-          bottom: -30px;
-          width: 100%;
-          border: 15px solid transparent;
-          border-top-color: #e6e6e6;
       }
 
       .body-border > td p {
@@ -2614,17 +2607,16 @@ body.outlook p {
         border-top: 15px solid #e6e6e6;
       } 
 
-      td.add-top-point::before {
+      td.add-top-point:before {
         content: "";
         position: relative;
-        top: 13px;
-        width: 100%;
+        display: inline-block;
         border: 15px solid transparent;
         border-top-color: #e6e6e6;
       }
 
       td.add-top-point h3 {
-        margin: auto;
+        margin: auto auto 30px;
       }
 
       td.add-top-point ul {
@@ -2667,13 +2659,13 @@ body.outlook p {
 
                   <table class="row">
 
-                    <tbody class="top-header" style="background: linear-gradient( 180deg, rgba( 51, 62, 72, 1 ) 25%, rgba( 51, 62, 72, 0 ) 80% ), url('https://aperabags.com/wp-content/uploads/2019/10/email-header-image.jpg');background-position: center center; background-size: cover; padding: 0px;">
+                    <tbody class="top-header">
 
                       <tr>
 
                         <th>
 
-                          <a href="https://aperabags.com/shop/">
+                          <a href="https://aperabags.com/">
 
                           <img createnew="true" src="https://aperabags.com/wp-content/uploads/2019/05/long-logo-white.png" class="text-center" /></a>
 
@@ -2727,6 +2719,11 @@ body.outlook p {
                             <p class="text-left">
                               <p class="text-left"><strong>Percentage:</strong></p>
                               <p class="text-left">{Percentage:6}</p>
+                            </p>
+
+                            <p class="text-left">
+                              <p class="text-left"><strong>Users Discount Percentage:</strong></p>
+                              <p class="text-left">{Users Discount:15}</p>
                             </p>
 
                         </td>

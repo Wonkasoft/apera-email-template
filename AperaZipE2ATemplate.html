@@ -141,6 +141,14 @@ table, tr, td {
 
   text-align: left; }
 
+tbody.top-header {
+  background: linear-gradient( 180deg, rgba( 51, 62, 72, 1 ) 25%, rgba( 51, 62, 72, 0 ) 80% ), url('https://aperabags.com/wp-content/uploads/2019/10/email-header-image.jpg');
+  background-position: center center; 
+  background-size: cover; 
+  background-repeat: no-repeat;
+  padding: 0px;
+}
+
 tbody.top-header th {
 
   width: 100%;
@@ -2433,19 +2441,9 @@ body.outlook p {
       .body-border > td::before {
           content: "";
           position: relative;
-          top: 13px;
-          width: 100%;
+          display: inline-block;
           border: 15px solid transparent;
           border-top-color: #52abf6;
-      }
-
-      .body-border > td::after {
-          content: "";
-          position: relative;
-          bottom: -30px;
-          width: 100%;
-          border: 15px solid transparent;
-          border-top-color: #e6e6e6;
       }
 
       .body-border > td p {
@@ -2559,6 +2557,51 @@ body.outlook p {
         max-width: 300px;
       }
 
+      td.add-top-point {
+        position: relative;
+        text-align: center;
+        padding: 0 15px;
+        border-top: 15px solid #e6e6e6;
+      } 
+
+      td.add-top-point::before {
+        content: "";
+        position: relative;
+        display: inline-block;
+        border: 15px solid transparent;
+        border-top-color: #e6e6e6;
+      }
+
+      td.add-top-point h3 {
+        margin: auto auto 30px;
+      }
+
+      td.add-top-point ul {
+        margin: 30px auto;
+      }
+
+      td.add-top-point li {
+        margin: 0 auto 30px;
+      }
+
+      td.add-top-point li .text-box {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 15px;
+        margin: auto;
+        height: 37px;
+        color: #fff;
+        font-size: 1rem;
+        line-height: 1.1;
+        width: 70%;
+        background: #52abf6;
+      }
+
+      td.add-top-point li .text-box a, td.add-top-point li .text-box a {
+        color: #fff;
+      }
+
     </style>
 
   </head>
@@ -2584,13 +2627,13 @@ body.outlook p {
 
                     <table class="row">
 
-                      <tbody class="top-header" style="background: linear-gradient( 180deg, rgba( 51, 62, 72, 1 ) 25%, rgba( 51, 62, 72, 0 ) 80% ), url('https://aperabags.com/wp-content/uploads/2019/10/email-header-image.jpg'); background-position: center center; background-size: cover; padding: 0px;">
+                      <tbody class="top-header">
 
                         <tr>
 
                           <th>
 
-                            <a href="https://aperabags.com/shop/">
+                            <a href="https://aperabags.com/">
                               <img createnew="true" src="https://aperabags.com/wp-content/uploads/2019/05/long-logo-white.png" class="text-center" />
                             </a>
 
@@ -2649,7 +2692,8 @@ body.outlook p {
 
                         </tr>
                         <tr class="bg-light bg-apera-logo">
-                          <td class="text-center">
+                          <td class="text-center add-top-point">
+                            <br>
                             <h3 class="body-title text-center title-underline">Let’s get started!</h3>
 
                             <p class="text-left">Please click the link below to complete filling out your profile on our referral program portal: <a href="https://apera.refersion.com/affiliate/login"><strong>Referison!</strong></a></p>
@@ -2673,7 +2717,8 @@ body.outlook p {
 
                               <h3 class="body-title text-center">What’s the Difference Between my Refersion Account and my Apera Account?</h3>
 
-                              <p class="text-left">Your Refersion account and your Apera account are two separate accounts. <a href="https://apera.refersion.com/affiliate/login"><strong>Your Refersion account</strong></a> is your portal to track your sales, what Apera products your audience is buying, and manage the commission you’ve earned. <a href="https://aperabags.com/my-account/"><strong>Your Apera account</strong></a> is where you can go to purchase your own Apera gear and track your Apera orders.</p>
+                              <p class="text-left">
+                                Your Refersion account and your Apera account are two separate accounts. <a href="https://apera.refersion.com/affiliate/login"><strong>Your Refersion account</strong></a> is your portal to track your sales, what Apera products your members are buying, upload your gym/club logo for bag customization, and manage the commission your gym/club has earned. <a href="https://aperabags.com/my-account/"><strong>Your Apera account</strong></a> is where you go to purchase your own Apera gear and track your Apera orders.</p>
                               
                               <table class="row difference-table">
                                 <tr>
@@ -2681,13 +2726,13 @@ body.outlook p {
                                     <a href="https://apera.refersion.com/affiliate/login"><img src="https://multimedia.getresponse.com/getresponse-G8dbp/photos/bf146003-2e0c-4496-b77d-9158190f9ccd.png" class="refersion-logo" /></a>
                                     <ul>
                                       <li>
-                                        <span>Track sales that have been made with your promo code/unique URL.</span>
+                                        <span>Track sales that have made with your Zip code/unique URL.</span>
                                       </li>
                                       <li>
-                                        <span>See what products your audience is buying.</span>
+                                        <span>See what products your members are buying.</span>
                                       </li>
                                       <li>
-                                        <span>Manage the commission you’ve earned.</span>
+                                        <span>Manage the commission your gym/club has earned.</span>
                                       </li>
                                     </ul>
                                   </td>
@@ -2695,16 +2740,13 @@ body.outlook p {
                                     <a href="https://aperabags.com/my-account/"><img src="https://multimedia.getresponse.com/getresponse-G8dbp/photos/5177c667-1e6a-4717-b525-53996aad2a4a.png" class="refersion-logo" /></a>
                                     <ul>
                                       <li>
+                                        <span>Upload your gym/club logo.</span>
+                                      </li>
+                                      <li>
                                         <span>Purchase your own Apera gear.</span>
                                       </li>
                                       <li>
                                         <span>Track your Apera orders.</span>
-                                      </li>
-                                      <li>
-                                        <span>Upload your gym/club logo.</span>
-                                      </li>
-                                      <li>
-                                        <span>Get exclusive perks and discounts.</span>
                                       </li>
                                     </ul>
                                   </td>

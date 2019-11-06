@@ -141,6 +141,14 @@ table, tr, td {
 
   text-align: left; }
 
+tbody.top-header {
+  background: linear-gradient( 180deg, rgba( 51, 62, 72, 1 ) 25%, rgba( 51, 62, 72, 0 ) 80% ), url('https://aperabags.com/wp-content/uploads/2019/10/email-header-image.jpg');
+  background-position: center center; 
+  background-size: cover; 
+  background-repeat: no-repeat;
+  padding: 0px;
+}
+
 tbody.top-header th {
 
   width: 100%;
@@ -1500,9 +1508,9 @@ td,
 
 th {
 
-  font-size: 16px;
+  font-size: 1.1rem;
 
-  line-height: 1.3; }
+  line-height: 1.7; }
 
 p {
 
@@ -1718,14 +1726,21 @@ table.button {
     display: flex;
     margin: auto;
     padding: 8px;
-    width: 270px;
+    height: 58px;
+    max-width: 75%;
     color: #ffffff;
     background: #52abf6;
     border-radius: 100px;
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    box-shadow: 0 1px 4px 0 rgba(0,0,0,.6);
+    font-weight: bold;
+    font-size: 1.3rem;
+    box-shadow: 0 1px 32px 0 rgba(0,0,0,.16);
+  }
+  table.button.expanded td a.wonka-btn span {
+      position: relative;
+      top: 2px;
   }
 
 table.button:hover table tr td a,
@@ -2425,19 +2440,9 @@ body.outlook p {
       .body-border > td::before {
           content: "";
           position: relative;
-          top: 13px;
-          width: 100%;
+          display: inline-block;
           border: 15px solid transparent;
           border-top-color: #52abf6;
-      }
-
-      .body-border > td::after {
-          content: "";
-          position: relative;
-          bottom: -30px;
-          width: 100%;
-          border: 15px solid transparent;
-          border-top-color: #e6e6e6;
       }
 
       .body-border > td p {
@@ -2551,8 +2556,49 @@ body.outlook p {
         max-width: 300px;
       }
 
-      .earn {
-        color: red;
+      td.add-top-point {
+        position: relative;
+        text-align: center;
+        padding: 0 15px;
+        border-top: 15px solid #e6e6e6;
+      } 
+
+      td.add-top-point::before {
+        content: "";
+        position: relative;
+        display: inline-block;
+        border: 15px solid transparent;
+        border-top-color: #e6e6e6;
+      }
+
+      td.add-top-point h3 {
+        margin: auto auto 30px;
+      }
+
+      td.add-top-point ul {
+        margin: 30px auto;
+      }
+
+      td.add-top-point li {
+        margin: 0 auto 30px;
+      }
+
+      td.add-top-point li .text-box {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 15px;
+        margin: auto;
+        height: 37px;
+        color: #fff;
+        font-size: 1rem;
+        line-height: 1.1;
+        width: 70%;
+        background: #52abf6;
+      }
+
+      td.add-top-point li .text-box a, td.add-top-point li .text-box a {
+        color: #fff;
       }
 
     </style>
@@ -2570,8 +2616,6 @@ body.outlook p {
 
         <td class="float-center" align="center" valign="top">
 
-          <center data-parsed="">
-
             <table align="center" class="container header float-center">
 
               <tbody>
@@ -2582,13 +2626,13 @@ body.outlook p {
 
                     <table class="row">
 
-                      <tbody class="top-header" style="background: linear-gradient( 180deg, rgba( 51, 62, 72, 1 ) 25%, rgba( 51, 62, 72, 0 ) 80% ), url('https://aperabags.com/wp-content/uploads/2019/10/email-header-image.jpg');background-position: center center; background-size: cover; padding: 0px;">
+                      <tbody class="top-header">
 
                         <tr>
 
                           <th>
 
-                            <a href="https://aperabags.com/shop/">
+                            <a href="https://aperabags.com/">
 
                             <img createnew="true" src="https://aperabags.com/wp-content/uploads/2019/05/long-logo-white.png" class="text-center" /></a>
 
@@ -2598,7 +2642,7 @@ body.outlook p {
                         <tr>
                           <th class="shop-link">
 
-                            <a href="https://aperabags.com/shop/"><span>SHOP</span></a> | <a href="https://aperabags.com/shop/"><span class="earn">EARN $10</span></a>
+                            <a href="https://aperabags.com/shop/"><span>SHOP</span></a> | <a href="https://aperabags.com/shop/"><span>JOIN OUR PERKS PROGRAM</span></a>
 
                           </th>
                         </tr>
@@ -2633,14 +2677,33 @@ body.outlook p {
 
                             <h2 class="body-title text-center">[[clubgymname]],</h2>
 
-                            <p class="text-left">Unfortunately we did not approve your application to join the Apera Zip Program. Please do not get discouraged! We encourage you to keep growing as an organization and continue to  inspire others to achieve their fitness and health goals along the way! Feel free to apply again in a couple months. Thank you for your submission and we wish you the best of luck.</p>
+                            <p class="text-left">Unfortunately we did not approve your application to join the Apera Zip Program. Please do not get discouraged! We encourage you to keep growing as an organization and continue to  inspire others to achieve their fitness and health goals along the way! Feel free to apply again in a couple months.</p>
 
                           </td>
 
                         </tr>
                         <tr class="bg-light">
-                          <td>
-                            <p class="text-left">Feel free to apply again in a couple months. Thank you for your submission and we wish you the best of luck.</p>
+                          <td class="add-top-point">
+                            <h3 class="body-title text-center">Not A Part of Our Zip Program Yet? <br />
+                            JOIN THE PERKS PROGRAM!!!</h3>
+
+                            <p class="text-left">In the meantime, please consider joining the Apera Perks Program! Signing up is totally FREE and you will immediately receive $10 in AperaCash!!! You can earn more AperaCash in lots of ways: by liking us on Facebook, following us on Instagram, sharing the Perks Program with your family and friends, and more!</p>
+
+                            <table class="button expanded rounded text-center">
+
+                              <tr>
+
+                                <td class="text-center">
+
+                                  <a class="wonka-btn" href="https://aperabags.com/perks/"><span>Check out the Perks Program</span></a>
+
+                                </td>
+
+                              </tr>
+
+                            </table>
+
+                            <p class="text-left">Thank you for your submission and we hope to see you a part of the Apera Perks Program soon!</p>
                             
                             <p class="text-left">
                               
@@ -2721,8 +2784,6 @@ body.outlook p {
               </tbody>
 
             </table>
-
-          </center>
 
         </td>
 

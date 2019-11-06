@@ -1741,11 +1741,6 @@ table.button {
     box-shadow: 0 1px 4px 0 rgba(0,0,0,.6);
   }
 
-  table.button.expanded td a.wonka-btn span {
-    position: relative;
-    top: 2px;
-  }
-
 table.button:hover table tr td a,
 
 table.button:active table tr td a,
@@ -2440,7 +2435,7 @@ body.outlook p {
         margin: 30px auto;
       }
 
-      .body-border > td::before {
+      .body-border > td:before {
           content: "";
           position: relative;
           display: inline-block;
@@ -2535,7 +2530,7 @@ body.outlook p {
         margin: 8px;
       }
 
-      .difference-table td ul li::before  {
+      .difference-table td ul li:before  {
         content: "\2022";
         margin-right: 4px;
         font-size: 1.2rem;
@@ -2592,11 +2587,6 @@ body.outlook p {
         box-shadow: 0 1px 4px 0 rgba(0,0,0,.6);
       }
 
-      table.checkers tbody td ul li a.wonka-btn span {
-        position: relative;
-        top: 2px;
-      }
-
       table.checkers tbody .badge {
         display: inline-grid;
         align-items: center;
@@ -2622,7 +2612,7 @@ body.outlook p {
         border-top: 15px solid #e6e6e6;
       } 
 
-      td.add-top-point::before {
+      td.add-top-point:before {
         content: "";
         position: relative;
         display: inline-block;
@@ -2631,7 +2621,7 @@ body.outlook p {
       }
 
       td.add-top-point h3 {
-        margin: auto;
+        margin: auto auto 30px;
       }
 
       td.add-top-point ul {
@@ -2654,10 +2644,6 @@ body.outlook p {
         line-height: 1.1;
         width: 70%;
         background: #52abf6;
-      }
-
-      td.add-top-point li .text-box a, td.add-top-point li .text-box a {
-        color: #fff;
       }
 
     </style>
@@ -2684,7 +2670,7 @@ body.outlook p {
 
                         <th>
 
-                          <a href="https://aperabags.com/shop/">
+                          <a href="https://aperabags.com/">
 
                           <img createnew="true" src="https://aperabags.com/wp-content/uploads/2019/05/long-logo-white.png" class="text-center" /></a>
 
@@ -2718,50 +2704,76 @@ body.outlook p {
                       <tbody>
                         <tr  class="body-border">
                           <td class="text-center">
-                            <h2 class="text-center body-title">New Zip Affiliate Registered</h2>
+                            <h2 class="text-center body-title">New MSE Educator Signup</h2>
 
                             <p class="text-left">
                               <p class="text-left"><strong>Name:</strong></p>
-                              <p class="text-left">{Name (First):1.3} {Name (Last):1.6}</p>
+                              <p class="text-left">{Name (First):7.3} {Name (Last):7.6}</p>
                             </p>
-
+                            
                             <p class="text-left">
                               <p class="text-left"><strong>Email:</strong></p>
-                              <p class="text-left">{Email:15}</p>
-                            </p>
-                                                        
-                            <p class="text-left">
-                              <p class="text-left"><strong>Phone:</strong></p>
-                              <p class="text-left">{Phone:14}</p>
+                              <p class="text-left">{Email:3}</p>
                             </p>
 
+                            <p class="text-left">
+                              <p class="text-left"><strong>MSE Request:</strong></p>
+                              <p class="text-left">{MSE Request:9}</p>
+                            </p>
+
+                            <p class="text-left">
+                              <p class="text-left"><strong>MSE Occupation:</strong></p>
+                              <p class="text-left">{MSE Occupation:29}</p>
+                            </p>
+
+                            <p class="text-left">
+                              <p class="text-left"><strong>Educator School Website:</strong></p>
+                              <p class="text-left">{Educator School Website:26}</p>
+                            </p>
+                            
+                            <p class="text-left">
+                              <p class="text-left"><strong>Educator School Email:</strong></p>
+                              <p class="text-left">{Educator School Email:27}</p>
+                            </p>
+
+                            <p class="text-left">
+                              <p class="text-left"><strong>Educator Subject:</strong></p>
+                              <p class="text-left">{Educator Subject:28}</p>
+                            </p>
+
+                            <p class="text-left">
+                              <p class="text-left"><strong>Educator Years:</strong></p>
+                              <p class="text-left">{Educator Years:31}</p>
+                            </p>
+
+                            <p class="text-left">
+                              <p class="text-left"><strong>Educator Note:</strong></p>
+                              <p class="text-left">{Educator Note:32}</p>
+                            </p>
+                                                        
                         </td>
                       </tr>
                       <tr class="bg-light">
-                        <td>
+                        <td class="add-top-point">
                             <p class="text-center">
-                              <strong>To create affiliate discount code for {Name (First):1.3}, please click the button below:</strong>
+                              <strong>To confirm your approve {Name (First):7.3}, please click the button below:</strong>
                             </p>
                             <table class="button expanded rounded text-center">
-
                               <tr>
-                                <td class="text-center"><a class="wonka-btn" href="https://aperabags.com/add-discount-code/?email={Email:15}&tag=zip_discount_code_created&fname={Name (First):1.3}&lname={Name (Last):1.6}&mustbe=97468f1980416a4376b44e701d25f24b"><span>Create Discount Code</span></a>
+                                <td class="text-center"><a class="wonka-btn" href="https://aperabags.com/api/wonkasoft/v1/getresponse-api/?email={Email:3}&tag=approved&campaign_name=perks_mse_program_signups">Approve</a>
                                 </td>
                               </tr>
-
                             </table>
 
                             <p class="text-center">
-                              <strong>After setting this affiliates discount code above, please click the button below to complete their refersion account setup:</strong>
+                              <strong>To confirm your deny {Name (First):7.3} please click the button below:</strong>
                             </p>
                             <table class="button expanded rounded text-center">
-
                               <tr>
-                                <td class="text-center"><a class="wonka-btn" href="https://www.refersion.com/base/login"><span>Refersion Admin Login</span></a>
+                                <td class="text-center"><a class="wonka-btn" href="https://aperabags.com/api/wonkasoft/v1/getresponse-api/?email={Email:3}&tag=denial&campaign_name=perks_mse_program_signups">Denial</a>
                                 </td>
                               </tr>
-
-                            </table>
+                          </table>
                         </td>
                       </tr>
                   </tbody>

@@ -1,4 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 
   <head>
@@ -28,6 +29,12 @@
   padding: 0; 
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   width: 100% !important;
   max-width: 600px;
@@ -41,12 +48,6 @@ body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; 
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .ExternalClass {
@@ -1513,9 +1514,9 @@ td,
 
 th {
 
-  font-size: 16px;
+  font-size: 1.1rem;
 
-  line-height: 1.3; }
+  line-height: 1.7; }
 
 p {
 
@@ -1731,19 +1732,22 @@ table.button {
     display: flex;
     margin: auto;
     padding: 8px;
-    width: 270px;
+    height: 58px;
+    max-width: 50%;
     color: #ffffff;
     background: #52abf6;
     border-radius: 100px;
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    box-shadow: 0 1px 4px 0 rgba(0,0,0,.6);
+    font-weight: bold;
+    font-size: 1.3rem;
+    box-shadow: 0 1px 32px 0 rgba(0,0,0,.16);
   }
 
   table.button.expanded td a.wonka-btn span {
-    position: relative;
-    top: 2px;
+      position: relative;
+      top: 2px;
   }
 
 table.button:hover table tr td a,
@@ -2437,7 +2441,7 @@ body.outlook p {
       }
 
       .body-border > td .body-title {
-        margin: 30px auto;
+        margin: 30px 6%;
       }
 
       .body-border > td::before {
@@ -2466,13 +2470,13 @@ body.outlook p {
 
       .bg-apera-logo {
         background: url("https://aperabags.com/wp-content/uploads/2019/05/Logo-White-8.png");
-        background-size: cover;
+        background-size: 90% 90%;
         background-position: center 20px;
         background-repeat: no-repeat;
       }
 
       .bg-apera-logo > td {
-        background: rgba( 250, 250, 250, .85 );
+        background: rgba( 250, 250, 250, .9 );
         padding: 30px 15px 0;
       }
 
@@ -2527,12 +2531,12 @@ body.outlook p {
       }
 
       .difference-table td ul {
-        padding: 0 8px;
+        padding: 0;
         list-style: none;
       }
 
       .difference-table td ul li {
-        margin: 8px;
+        margin-bottom: 22px;
       }
 
       .difference-table td ul li::before  {
@@ -2542,11 +2546,11 @@ body.outlook p {
       }
 
       .difference-table .refersion-side {
-        background: rgba( 240, 240, 240, .5 );
+        background: rgba( 0, 0, 0, .03 );
       }
 
       .difference-table .apera-side {
-        background: rgba( 220, 220, 220, .5 );
+        background: rgba( 0, 0, 0, .07 );
       }
 
       .difference-table img {
@@ -2559,60 +2563,30 @@ body.outlook p {
         max-width: 300px;
       }
 
-      table.checkers {
-        width: 100%;
+      td.perks-links h3 {
+        margin: auto;
       }
 
-      table.checkers tbody td {
-        text-align: center;
-        width: 50%;
-        vertical-align: middle;
+      td.perks-links ul {
+        margin: 30px auto 60px;
       }
 
-      table.checkers tbody td ul {
-        list-style: none;
-      }
-
-      table.checkers tbody td ul li {
+      td.perks-links li {
         margin: 0 auto 30px;
       }
 
-      table.checkers tbody td ul li a.wonka-btn {
+      td.perks-links li .text-box {
         display: grid;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 15px;
         margin: auto;
-        height: 35px;
-        width: 270px;
-        color: #ffffff;
-        background: #52abf6;
-        border-radius: 100px;
-        align-items: center;
-        justify-content: center;
-        text-transform: uppercase;
-        line-height: 2;
-        box-shadow: 0 1px 4px 0 rgba(0,0,0,.6);
-      }
-
-      table.checkers tbody td ul li a.wonka-btn span {
-        position: relative;
-        top: 2px;
-      }
-
-      table.checkers tbody .badge {
-        display: inline-grid;
-        align-items: center;
-        justify-content: center;
+        height: 37px;
         color: #fff;
-        background: #343e47;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        font-size: 2.8rem;
-        line-height: 1.3;
-      }
-
-      .guide, .stash-img {
-        margin: auto;
-        max-width:250px;
+        font-size: 1rem;
+        line-height: 1.1;
+        width: 70%;
+        background: #52abf6;
       }
 
       td.add-top-point {
@@ -2631,7 +2605,7 @@ body.outlook p {
       }
 
       td.add-top-point h3 {
-        margin: auto;
+        margin: auto auto 30px;
       }
 
       td.add-top-point ul {
@@ -2656,115 +2630,158 @@ body.outlook p {
         background: #52abf6;
       }
 
-      td.add-top-point li .text-box a, td.add-top-point li .text-box a {
-        color: #fff;
-      }
-
     </style>
+
   </head>
 
   <body>
+
     <!-- <style> -->
+    <span class="preheader">Start shopping! You’ve been approved for the Apera MSE+ discount!</span><br />
+    
     <table class="body">
+
       <tr>
+
         <td class="float-center" align="center" valign="top">
-          <table align="center" class="container header float-center">
 
-            <tbody>
 
-              <tr>
+            <table align="center" class="container header float-center">
 
-                <td>
-
-                  <table class="row">
-
-                    <tbody class="top-header">
-
-                      <tr>
-
-                        <th>
-
-                          <a href="https://aperabags.com/shop/">
-
-                          <img createnew="true" src="https://aperabags.com/wp-content/uploads/2019/05/long-logo-white.png" class="text-center" /></a>
-
-                        </th>
-
-                      </tr>
-                      <tr>
-                        <th class="shop-link">
-
-                          <a href="https://aperabags.com/wp-admin/"><span>ADMIN</span></a>
-
-                        </th>
-                      </tr>
-
-                    </tbody>
-
-                  </table>
-
-                </td>
-
-              </tr>
-
-            </tbody>
-
-          </table>
-            <table align="center" class="container float-center">
               <tbody>
+
                 <tr>
+
                   <td>
+
                     <table class="row">
+
+                      <tbody class="top-header">
+
+                        <tr>
+
+                          <th>
+
+                            <a href="https://aperabags.com/">
+
+                            <img createnew="true" src="https://aperabags.com/wp-content/uploads/2019/05/long-logo-white.png" class="text-center" /></a>
+
+                          </th>
+
+                        </tr>
+                        <tr>
+                          <th class="shop-link">
+
+                            <a href="https://aperabags.com/shop/"><span>SHOP</span></a> | <a href="https://aperabags.com/my-account/"><span>MY PERKS</span></a>
+
+                          </th>
+                        </tr>
+
+                      </tbody>
+
+                    </table>
+
+                  </td>
+
+                </tr>
+
+              </tbody>
+
+            </table>
+
+            <table align="center" class="container float-center">
+
+              <tbody>
+
+                <tr>
+
+                  <td>
+
+                    <table class="row">
+
                       <tbody>
-                        <tr  class="body-border">
+
+                        <tr class="body-border">
+
                           <td class="text-center">
-                            <h2 class="text-center body-title">New Zip Affiliate Registered</h2>
+
+                            <h2 class="body-title text-center">Hi, [[name]]!</h2>
 
                             <p class="text-left">
-                              <p class="text-left"><strong>Name:</strong></p>
-                              <p class="text-left">{Name (First):1.3} {Name (Last):1.6}</p>
-                            </p>
+                            You’ve been approved to receive the Military, Student, Educators + (MSE+) discount! When logged into your Apera Perks account, a 5% discount will always be automatically be applied to your order at checkout. Please note that you must be logged into your Apera Perks account for your MSE+ discount to be applied to your order.</p>
+
+                          </td>
+
+                        </tr>
+
+                        <tr class="bg-light">
+                          <td class="add-top-point">
 
                             <p class="text-left">
-                              <p class="text-left"><strong>Email:</strong></p>
-                              <p class="text-left">{Email:15}</p>
-                            </p>
-                                                        
-                            <p class="text-left">
-                              <p class="text-left"><strong>Phone:</strong></p>
-                              <p class="text-left">{Phone:14}</p>
-                            </p>
-
-                        </td>
-                      </tr>
-                      <tr class="bg-light">
-                        <td>
-                            <p class="text-center">
-                              <strong>To create affiliate discount code for {Name (First):1.3}, please click the button below:</strong>
-                            </p>
+                            Again, welcome to the Apera Perks Program! We are so happy you are a part or our community and can’t wait to see where our bags help take you.</p>
+                            
                             <table class="button expanded rounded text-center">
 
                               <tr>
-                                <td class="text-center"><a class="wonka-btn" href="https://aperabags.com/add-discount-code/?email={Email:15}&tag=zip_discount_code_created&fname={Name (First):1.3}&lname={Name (Last):1.6}&mustbe=97468f1980416a4376b44e701d25f24b"><span>Create Discount Code</span></a>
+
+                                <td class="text-center">
+
+                                  <a class="wonka-btn" href="https://aperabags.com/shop/"><span>START SHOPPING</span></a>
+
                                 </td>
+
                               </tr>
 
                             </table>
+                            
+                            <p class="text-left">
+                            Sincerely,</p>
 
-                            <p class="text-center">
-                              <strong>After setting this affiliates discount code above, please click the button below to complete their refersion account setup:</strong>
+                            <p class="text-left">
+                            Team Apera<br>
+                            "The Best Darn Gym Bags" ™
                             </p>
-                            <table class="button expanded rounded text-center">
 
-                              <tr>
-                                <td class="text-center"><a class="wonka-btn" href="https://www.refersion.com/base/login"><span>Refersion Admin Login</span></a>
-                                </td>
-                              </tr>
+                            <p class="text-center">Check us out on social media!</p><br />
+                            <table class="row collapse">
+
+                              <tbody>
+
+                                <tr>
+
+                                  <th class="small-12 large-2 columns first">
+
+                                    <table>
+
+                                      <tr>
+
+                                        <th style="padding: 8px; text-align: center;">
+
+                                          <a style="display: inline-block;" href="https://www.instagram.com/aperabags/"><img class="social-icons" width="25" height="25" src="https://aperabags.com/wp-content/uploads/2019/08/Instagram-icon-small.png"></a>
+
+                                          <a style="display: inline-block;" href="https://www.facebook.com/aperabags/"><img class="social-icons" width="25" height="25" src="https://aperabags.com/wp-content/uploads/2019/08/facebook-icon-small.png"></a>
+
+                                          <a style="display: inline-block;" href="https://twitter.com/aperabags/"><img class="social-icons" width="25" height="25" src="https://aperabags.com/wp-content/uploads/2019/08/twitter-icon-small.png"></a>
+
+                                          <a style="display: inline-block;" href="https://www.pinterest.com/aperabags/"><img class="social-icons" width="25" height="25" src="https://aperabags.com/wp-content/uploads/2019/08/pinterest-icon-small.png"></a>
+
+                                        </th>
+
+                                      </tr>
+
+                                    </table>
+
+                                  </th>
+
+                                </tr>
+
+                              </tbody>
 
                             </table>
-                        </td>
-                      </tr>
-                  </tbody>
+                          </td>
+                        </tr>
+
+                      </tbody>
 
                       <tfoot style="background: #333e48;">
 

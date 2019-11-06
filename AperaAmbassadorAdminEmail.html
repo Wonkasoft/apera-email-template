@@ -146,6 +146,14 @@ table, tr, td {
 
   text-align: left; }
 
+tbody.top-header {
+  background: linear-gradient( 180deg, rgba( 51, 62, 72, 1 ) 25%, rgba( 51, 62, 72, 0 ) 80% ), url('https://aperabags.com/wp-content/uploads/2019/10/email-header-image.jpg');
+  background-position: center center; 
+  background-size: cover; 
+  background-repeat: no-repeat;
+  padding: 0px;
+}
+
 tbody.top-header th {
 
   width: 100%;
@@ -2430,19 +2438,9 @@ body.outlook p {
       .body-border > td::before {
           content: "";
           position: relative;
-          top: 13px;
-          width: 100%;
+          display: inline-block;
           border: 15px solid transparent;
           border-top-color: #52abf6;
-      }
-
-      .body-border > td::after {
-          content: "";
-          position: relative;
-          bottom: -30px;
-          width: 100%;
-          border: 15px solid transparent;
-          border-top-color: #e6e6e6;
       }
 
       .body-border > td p {
@@ -2617,8 +2615,7 @@ body.outlook p {
       td.add-top-point::before {
         content: "";
         position: relative;
-        top: 13px;
-        width: 100%;
+        display: inline-block;
         border: 15px solid transparent;
         border-top-color: #e6e6e6;
       }
@@ -2667,13 +2664,13 @@ body.outlook p {
 
                   <table class="row">
 
-                    <tbody class="top-header" style="background: linear-gradient( 180deg, rgba( 51, 62, 72, 1 ) 25%, rgba( 51, 62, 72, 0 ) 80% ), url('https://aperabags.com/wp-content/uploads/2019/10/email-header-image.jpg');background-position: center center; background-size: cover; padding: 0px;">
+                    <tbody class="top-header">
 
                       <tr>
 
                         <th>
 
-                          <a href="https://aperabags.com/shop/">
+                          <a href="https://aperabags.com/">
 
                           <img createnew="true" src="https://aperabags.com/wp-content/uploads/2019/05/long-logo-white.png" class="text-center" /></a>
 
@@ -2761,7 +2758,7 @@ body.outlook p {
                         </td>
                       </tr>
                       <tr class="bg-light">
-                        <td>
+                        <td class="add-top-point">
                             <p class="text-center">
                               <strong>To confirm your approve {Name (First):14.3}, please click the button below:</strong>
                             </p>

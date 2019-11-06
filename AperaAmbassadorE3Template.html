@@ -147,6 +147,14 @@ table, tr, td {
 
   text-align: left; }
 
+tbody.top-header {
+  background: linear-gradient( 180deg, rgba( 51, 62, 72, 1 ) 25%, rgba( 51, 62, 72, 0 ) 80% ), url('https://aperabags.com/wp-content/uploads/2019/10/email-header-image.jpg');
+  background-position: center center; 
+  background-size: cover; 
+  background-repeat: no-repeat;
+  padding: 0px;
+}
+
 tbody.top-header th {
 
   width: 100%;
@@ -2442,15 +2450,6 @@ body.outlook p {
           border-top-color: #52abf6;
       }
 
-      .body-border > td::after {
-          content: "";
-          position: relative;
-          display: inline-block;
-          bottom: -30px;
-          border: 15px solid transparent;
-          border-top-color: #e6e6e6;
-      }
-
       .body-border > td p {
         margin: 0 0 30px;
       }
@@ -2591,8 +2590,13 @@ body.outlook p {
         align-items: center;
         justify-content: center;
         text-transform: uppercase;
-        line-height: 2;
+        line-height: 1.5;
         box-shadow: 0 1px 4px 0 rgba(0,0,0,.6);
+      }
+
+      table.checkers tbody td ul li a.wonka-btn span {
+        position: relative;
+        top: 2px;
       }
 
       table.checkers tbody .badge {
@@ -2629,7 +2633,7 @@ body.outlook p {
       }
 
       td.add-top-point h3 {
-        margin: auto;
+        margin: auto auto 30px;
       }
 
       td.add-top-point ul {
@@ -2679,7 +2683,7 @@ body.outlook p {
 
                     <table class="row">
 
-                      <tbody class="top-header" style="background: linear-gradient( 180deg, rgba( 51, 62, 72, 1 ) 25%, rgba( 51, 62, 72, 0 ) 80% ), url('https://aperabags.com/wp-content/uploads/2019/10/email-header-image.jpg');background-position: center center; background-size: cover; padding: 0px;">
+                      <tbody class="top-header">
 
                         <tr>
 
@@ -2740,7 +2744,7 @@ body.outlook p {
                           </td>
                         </tr>
                         <tr class="bg-light">
-                          <td>
+                          <td class="add-top-point">
                             <table class="table checkers">
                               <tbody>
                                 <tr>
