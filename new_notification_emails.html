@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+	</head>
+	<body>
+		<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,600,600i,700,700i&display=swap');
+		table {font-family:'Josefin Sans',san-serif;}
+		/* CLIENT-SPECIFIC STYLES */
+		/* Force Outlook to provide a "view in browser" message */
+		.ExternalClass {
+		width: 100% !important;
+		}
+		/* Force Hotmail to display emails at full width */
+		.ExternalClass,
+		.ExternalClass p,
+		.ExternalClass span,
+		.ExternalClass font,
+		.ExternalClass td,
+		.ExternalClass div {
+		line-height: 100%;
+		}
+		/* Force Hotmail to display normal line spacing */
+		/* Prevent WebKit and Windows mobile changing default text sizes */
+		/* Remove spacing between tables in Outlook 2007 and up */
+		/* Allow smoother rendering of resized image in Internet Explorer */
+		/* RESET STYLES */
+		/* iOS BLUE LINKS */
+		/* MOBILE STYLES */
+		@media screen and (max-width: 525px) {
+		/* ALLOWS FOR FLUID TABLES */
+		table[class="wrapper"] {
+		width: 100% !important;
+		max-width: 600px !important;
+		padding: 0 !important;
+		}
+		/* ADJUSTS LAYOUT OF LOGO IMAGE */
+		td[class="logo"] {
+		text-align: center;
+		padding: 20px 0 20px 0 !important;
+		}
+		td[class="logo"] img {
+		margin: 0 auto !important;
+		}
+		/* USE THESE CLASSES TO HIDE CONTENT ON MOBILE */
+		td[class="mobile-hide"] {
+		display: none;
+		}
+		img[class="mobile-hide"] {
+		display: none !important;
+		}
+		img[class="img-max"] {
+		max-width: 300px !important;
+		height: 78px !important;
+		}
+		/* FULL-WIDTH TABLES */
+		table[class="responsive-table"] {
+		width: 100% !important;
+		max-width: 600px !important;
+		padding: 0 !important;
+		}
+		/* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+		td[class="padding"] {
+		padding: 10px 5% 15px 5% !important;
+		}
+		td[class="padding-copy"] {
+		padding: 10px 5% 10px 5% !important;
+		text-align: center;
+		}
+		td[class="padding-meta"] {
+		padding: 30px 5% 0px 5% !important;
+		text-align: center;
+		}
+		td[class="no-pad"] {
+		padding: 0 0 20px 0 !important;
+		}
+		td[class="no-padding"] {
+		padding: 0 !important;
+		}
+		td[class="section-padding"] {
+		padding: 0 15px !important;
+		}
+		td[class="section-padding-bottom-image"] {
+		padding: 50px 15px 0 15px !important;
+		}
+		/* ADJUST BUTTONS ON MOBILE */
+		td[class="mobile-wrapper"] {
+		padding: 10px 15px 15px 15px !important;
+		}
+		table[class="mobile-button-container"] {
+		margin: 0 auto;
+		width: 100% !important;
+		}
+		a[class="wonka-btn"],
+		a[class="mobile-button"] {
+		padding: 15px !important;
+		border: 0 !important;
+		font-size: 16px !important;
+		}
+		}
+		</style>
+		<!-- HEADER -->
+		<table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; display: none;">
+			<tbody>
+				<tr>
+					<td bgcolor="#ffffff" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+						<div align="center" style="padding: 0px 15px 0px 15px;">
+							<table role="presentation" border="0" cellpadding="0" cellspacing="0" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important;"><!-- LOGO/PREHEADER TEXT -->
+							<tbody>
+								<tr>
+									<td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0px;">
+										<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important;">
+											<tbody>
+												<tr>
+													<td width="100%" align="center" class="mobile-hide" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<table role="presentation" border="0" cellpadding="0" cellspacing="0" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important;">
+															<tbody>
+																<tr>
+																	<td align="center" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; font-size: 14px; font-family: 'Josefin Sans', Tahoma, Verdana, Segoe, sans-serif; color: #ffffff; text-decoration: none; text-align: center;"><span style="color: #ffffff; text-decoration: none;">This is an admin email notification.</span></td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- ONE COLUMN SECTION -->
+		<table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important;">
+			<tbody>
+				<tr>
+					<td bgcolor="#e6e6e6" align="center" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0 15px;">
+						<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important;">
+							<tbody>
+								<tr>
+									<td bgcolor="#333e48" class="header-section-bg" style="padding: 15px; color: #ffffff; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-image: url('https://multimedia.getresponse.com/getresponse-G8dbp/photos/d23ff11e-b2d9-4ba7-ad48-f97cdf558c41.jpg'); background-position: center center; background-size: 100% 100%; background-repeat: no-repeat;" alt="header bag fabric">
+										<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important;">
+											<tbody>
+												<tr>
+													<td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><!-- HERO IMAGE -->
+													<table role="presentation" align="center" width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important;">
+														<tbody>
+															<tr>
+																<td align="center" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																	<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important;">
+																		<tbody>
+																			<tr>
+																				<td align="center" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"><a href="https://aperabags.com/shop/" target="_blank" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-align: center;" rel="noopener"><img src="https://multimedia.getresponse.com/getresponse-G8dbp/photos/24566146-4ee5-4dd1-90ec-39ef5ce68cc3.png" width="300" alt="Apera Logo" border="0" style="-ms-interpolation-mode: bicubic; border: 0; height: 78px; line-height: 100%; outline: none; text-decoration: none; display: block; margin: auto; padding: 0; color: #666666; font-family: 'Josefin Sans', Tahoma, Verdana, Segoe, sans-serif; font-size: 16px; max-width: 300px !important;" class="img-max" /></a></td>
+																			</tr>
+																			<tr>
+																				<td align="center" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: 1.3rem; font-family: 'Josefin Sans', Tahoma, Verdana, Segoe, sans-serif; color: #ffffff; padding-top: 8px;"><a href="https://aperabags.com/admin" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #ffffff; font-family: 'Josefin Sans', Tahoma, Verdana, Segoe, sans-serif; font-weight: 600; padding: 0; margin: 0; text-align: center; line-height: 1.3; text-decoration: none; font-size: 1rem;"><span>Admin</span></a></td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<table role="presentation" valign="middle" align="center" border="0" cellpadding="0" cellspacing="0" width="693" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important;" height="1113">
+		<tbody>
+			<tr>
+				<td bgcolor="#e6e6e6" align="center" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0 15px;">
+					<table bgcolor="#52abf6" role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; height: 8px;">
+						<tbody>
+							<tr>
+								<td style="height: 8px; padding: 0;"></td>
+							</tr>
+						</tbody>
+					</table>
+					<table role="presentation" valign="middle" align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important;" height="1085">
+						<tbody>
+							<tr>
+								<td bgcolor="#e6e6e6" align="center" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0 15px;">
+									<table bgcolor="#fafafa" role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important;">
+										<tbody>
+											<tr>
+												<td style="padding: 15px; background: #e6e6e6;">
+													<h2 class="text-center body-title">New Zip signup</h2>
+													<p class="text-left"><strong>Name:</strong></p>
+													<p class="text-left">{Name (First):14.3} {Name (Last):14.6}</p>
+													<p class="text-left"><strong>Email:</strong></p>
+													<p class="text-left">{Email:13}</p>
+													<p class="text-left"><strong>Phone:</strong></p>
+													<p class="text-left">{Phone:8}</p>
+													<p class="text-left"><strong>Are you a Gym or Club</strong></p>
+													<p class="text-left">{Gym/Club:9}</p>
+													<p class="text-left"><strong>Name of Gym/Club:</strong></p>
+													<p class="text-left">{Name of Gym/Club:3}</p>
+													<p class="text-left"><strong>Why this Program:</strong></p>
+													<p class="text-left">{Why this Program:10}</p>
+												</td>
+											</tr>
+											<tr>
+												<td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 15px;"><!-- CONTENT SECTION AND COPY -->
+												<table role="presentation" width="600" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; width: 100%;">
+													<tbody>
+														<tr>
+															<td align="left" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-wrap: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; vertical-align: top; text-align: left; color: #0a0a0a; font-family: 'Josefin Sans', Tahoma, Verdana, Segoe, sans-serif; font-weight: normal; margin: 0; line-height: 1.5; font-size: 1.25rem; border-collapse: collapse !important; padding: 0;"><strong>To confirm your approve {Name (First):14.3}, please click the button below:</strong>
+																<table role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important;">
+																	<tbody>
+																		<tr>
+																			<td align="center" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" class="mobile-button-container"><a href="https://aperabags.com/api/wonkasoft/v1/getresponse-api/?email={Email:13}&amp;tag=zipapproved&amp;campaign_name=zip_program_signups" target="_blank" style="width: 70%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #ffffff; font-family: 'Josefin Sans', Tahoma, Verdana, Segoe, sans-serif; font-weight: bold; padding: 8px 0; margin: auto; text-align: center; line-height: 1.2; text-decoration: none; display: inline-block; background: #52abf6; border-radius: 100px; text-transform: uppercase; font-size: 1.2rem; box-shadow: 0 1px 4px 0 rgba(0,0,0,.6);" class="mobile-button" rel="noopener"><span style="position: relative; top: 2px;">Approve</span></a></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+										<tr>
+											<td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 15px;"><!-- CONTENT SECTION AND COPY -->
+											<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important;">
+												<tbody>
+													<tr>
+														<td align="left" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-wrap: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; vertical-align: top; text-align: left; color: #0a0a0a; font-family: 'Josefin Sans', Tahoma, Verdana, Segoe, sans-serif; font-weight: normal; margin: 0; line-height: 1.5; font-size: 1.25rem; border-collapse: collapse !important; padding: 0;"><strong>To confirm your deny {Name (First):14.3} please click the button below:</strong>
+															<table role="presentation" border="0" cellspacing="0" cellpadding="0" class="responsive-table" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; width: 100%;">
+																<tbody>
+																	<tr>
+																		<td align="center" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" class="mobile-button-container"><a href="https://aperabags.com/api/wonkasoft/v1/getresponse-api/?email={Email:13}&amp;tag=zipdenial&amp;campaign_name=zip_program_signups" target="_blank" style="width: 70%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #ffffff; font-family: 'Josefin Sans', Tahoma, Verdana, Segoe, sans-serif; font-weight: bold; padding: 8px 0; margin: auto; text-align: center; line-height: 1.2; text-decoration: none; display: inline-block; background: #52abf6; border-radius: 100px; text-transform: uppercase; font-size: 1.2rem; box-shadow: 0 1px 4px 0 rgba(0,0,0,.6);" class="mobile-button" rel="noopener"><span style="position: relative; top: 2px;">Denial</span></a></td>
+																	</tr>
+																</tbody>
+															</table>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+											<!-- FOOTER -->
+											<table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="600" valign="middle" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important;">
+												<tbody>
+													<tr>
+														<td bgcolor="#e6e6e6" align="center" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0 15px;" valign="middle" class="section-padding">
+															<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important;">
+																<tbody>
+																	<tr>
+																		<td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0;" valign="middle"><!-- COPYRIGHT COPY -->
+																		<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" align="center" valign="middle" class="responsive-table" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important;">
+																			<tbody>
+																				<tr>
+																					<td bgcolor="#333e48" align="center" valign="middle" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: 1rem; line-height: 1.15; font-family: 'Josefin Sans', Tahoma, Verdana, Segoe, sans-serif; color: #666666; background-color: #333e48; padding: 30px 15px;"><span style="display: inline-block; color: #ffffff;">Copyright © 2019 Apera Bags, All rights reserved.</span></td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<body bgcolor="#ffffff" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%; padding:0; height:100% !important;width:100% !important; margin: auto; padding: 0; max-width: 600px !important; text-align: center;">
+<!-- HEADER -->
+<table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important; display: none;">
+<tr>
+<td bgcolor="#ffffff" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;">
+<div align="center" style="padding: 0px 15px 0px 15px;">
+	<table role="presentation" border="0" cellpadding="0" cellspacing="0" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;">
+		<!-- LOGO/PREHEADER TEXT -->
+		<tr>
+			<td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0px;">
+				<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;">
+					<tr>
+						<td width="100%" align="center" class="mobile-hide" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;">
+							<table role="presentation" border="0" cellpadding="0" cellspacing="0" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;">
+								<tr>
+									<td align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0; font-size: 14px; font-family: 'Josefin Sans', Tahoma, Verdana, Segoe, sans-serif; color: #ffffff; text-decoration: none; text-align: center;"><span style="color: #ffffff; text-decoration: none;">This is an admin email notification.</span></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</div>
+</td>
+</tr>
+</table>
+<!-- ONE COLUMN SECTION -->
+<table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;">
+<tr>
+<td bgcolor="#e6e6e6" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0 15px;">
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;">
+	<tr>
+		<td bgcolor="#333e48" class="header-section-bg" style="padding: 15px;color:#ffffff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;background-image:url('https://multimedia.getresponse.com/getresponse-G8dbp/photos/d23ff11e-b2d9-4ba7-ad48-f97cdf558c41.jpg');background-position:center center;background-size: 100% 100%;background-repeat:no-repeat; padding: 15px; color:#ffffff;" alt="header bag fabric">
+			<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;">
+				<tr>
+					<td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;">
+						<!-- HERO IMAGE -->
+						<table role="presentation" align="center" width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;">
+							<tbody>
+								<tr>
+									<td align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;">
+										<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;">
+											<tr>
+												<td align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;">
+													<a href="https://aperabags.com/shop/" target="_blank" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-align: center;"><img src="https://multimedia.getresponse.com/getresponse-G8dbp/photos/24566146-4ee5-4dd1-90ec-39ef5ce68cc3.png" width="300" alt="Apera Logo" border="0" style="-ms-interpolation-mode: bicubic; border: 0; height: auto; line-height:100%; outline:none; text-decoration: none; display: block; margin: auto; padding: 0; color: #666666; text-decoration: none; font-family: 'Josefin Sans', Tahoma, Verdana, Segoe, sans-serif; font-size: 16px; max-width: 300px !important; height: 78px;" class="img-max"></a>
+												</td>
+											</tr>
+											<tr>
+												<td align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;font-size: 1.3rem; font-family: 'Josefin Sans', Tahoma, Verdana, Segoe, sans-serif; color: #ffffff; padding-top: 8px;">
+													<a href="https://aperabags.com/admin" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;color: #ffffff;font-family: 'Josefin Sans', Tahoma, Verdana, Segoe, sans-serif;font-weight: 600;padding: 0;margin: 0;text-align: center;line-height: 1.3;text-decoration: none;font-size: 1rem;"><span>Admin</span></a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</td>
+</tr>
+</table>
+<table role="presentation" valign="middle" align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;">
+<tr>
+<td bgcolor="#e6e6e6" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0 15px;">
+<table bgcolor="#52abf6" role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important; height: 8px;">
+</table>
+</td>
+</tr>
+</table>
+<table role="presentation" valign="middle" align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;">
+<tr>
+<td bgcolor="#e6e6e6" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0 15px;">
+<table bgcolor="#fafafa" role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;">
+	<tr>
+		<td style="padding: 0 15px; background: #e6e6e6;">
+			<h2 style="text-align: left; margin: auto;">New MSE Educator Signup</h2>
+			<p style="text-align: left;"><strong>Name:</strong></p>
+			<p style="text-align: left;">{Name (First):7.3} {Name (Last):7.6}</p>
+			<p style="text-align: left;"><strong>Email:</strong></p>
+			<p style="text-align: left;">{Email:3}</p>
+			<p style="text-align: left;"><strong>MSE Request:</strong></p>
+			<p style="text-align: left;">{MSE Request:9}</p>
+			<p style="text-align: left;"><strong>MSE Occupation:</strong></p>
+			<p style="text-align: left;">{MSE Occupation:29}</p>
+			<p style="text-align: left;"><strong>Educator School Website:</strong></p>
+			<p style="text-align: left;">{Educator School Website:26}</p>
+			<p style="text-align: left;"><strong>Educator School Email:</strong></p>
+			<p style="text-align: left;">{Educator School Email:27}</p>
+			<p style="text-align: left;"><strong>Educator Subject:</strong></p>
+			<p style="text-align: left;">{Educator Subject:28}</p>
+			<p style="text-align: left;"><strong>Educator Years:</strong></p>
+			<p style="text-align: left;">{Educator Years:31}</p>
+			<p style="text-align: left;"><strong>Educator Note:</strong></p>
+			<p style="text-align: left;">{Educator Note:32}</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 15px;">
+			<!-- CONTENT SECTION AND COPY -->
+			<table role="presentation" width="600" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important; width: 100%;">
+				<tr>
+					<td align="left" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace:0pt;mso-table-rspace:0pt;word-wrap: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; vertical-align: top; text-align: left; color: #0a0a0a; font-family: 'Josefin Sans', Tahoma, Verdana, Segoe, sans-serif; font-weight: normal; margin: 0; line-height: 1.5; font-size: 1.25rem; border-collapse: collapse !important; padding: 0; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none;">
+						<p><strong>To confirm your approve {Name (First):7.3}, please click the button below:</strong></p>
+						<table role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;">
+							<tr>
+								<td align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt; width: 100%;" class="mobile-button-container"><a href="https://aperabags.com/api/wonkasoft/v1/getresponse-api/?email={Email:3}&tag=approved&campaign_name=perks_mse_program_signups" target="_blank" style="width: 100%; -webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;color: #ffffff;font-family: 'Josefin Sans', Tahoma, Verdana, Segoe, sans-serif;font-weight: normal;padding: 15px 0;margin: auto;text-align: center;line-height: 1.2; text-decoration: none;display: inline-block;background: #52abf6;border-radius: 100px; text-transform: uppercase; font-size: 1.2rem;box-shadow: 0 1px 4px 0 rgba(0,0,0,.6);font-weight: 700;" class="mobile-button"><span style="position: relative; top: 2px;">Approve</span></a></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 15px;">
+			<!-- CONTENT SECTION AND COPY -->
+			<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;">
+				<tr>
+					<td align="left" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace:0pt;mso-table-rspace:0pt;word-wrap: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; vertical-align: top; text-align: left; color: #0a0a0a; font-family: 'Josefin Sans', Tahoma, Verdana, Segoe, sans-serif; font-weight: normal; margin: 0; line-height: 1.5; font-size: 1.25rem; border-collapse: collapse !important; padding: 0; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none;">
+						<p><strong>To confirm your deny {Name (First):7.3} please click the button below:</strong></p>
+						<table role="presentation" border="0" cellspacing="0" cellpadding="0" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important; width: 100%;">
+							<tr>
+								<td align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt; width: 100%;" class="mobile-button-container"><a href="https://aperabags.com/api/wonkasoft/v1/getresponse-api/?email={Email:3}&amp;tag=denial&amp;campaign_name=perks_mse_program_signups" target="_blank" style="width: 100%; -webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;color: #ffffff;font-family: 'Josefin Sans', Tahoma, Verdana, Segoe, sans-serif;font-weight: normal;padding: 15px 0;margin: auto;text-align: center;line-height: 1.2; text-decoration: none;display: inline-block;background: #52abf6;border-radius: 100px; text-transform: uppercase; font-size: 1.2rem;box-shadow: 0 1px 4px 0 rgba(0,0,0,.6);font-weight: 700;" class="mobile-button"><span style="position: relative; top: 2px;">Denial</span></a></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- FOOTER -->
+<table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="600" valign="middle" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;">
+<tr>
+<td bgcolor="#e6e6e6" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0 15px;" valign="middle" class="section-padding">
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;">
+	<tr>
+		<td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0;" valign="middle">
+			<!-- COPYRIGHT COPY -->
+			<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" align="center" valign="middle" class="responsive-table" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;">
+				<tr>
+					<td bgcolor="#333e48" align="center" valign="middle" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;mso-table-lspace:0pt;mso-table-rspace:0pt;font-size: 1rem; line-height: 1.15; font-family: 'Josefin Sans', Tahoma, Verdana, Segoe, sans-serif; color:#666666; background-color: #333e48; padding: 30px 15px;">
+						<span style="display: inline-block; color: rgb(255, 255, 255);">Copyright © 2019 Apera Bags, All rights reserved.</span>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
